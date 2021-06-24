@@ -1,0 +1,949 @@
+﻿Log file open, 06/24/21 01:35:50
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: LuxorGame
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-891958281) SRandInit(-891958281).
+LogTaskGraph: Started task graph with 5 named threads and 50 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.771719
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin CodeView
+LogPluginManager: Mounting plugin ControlRig
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2021.06.24-00.35.51:453][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.24-00.35.51:453][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.06.24-00.35.51:461][  0]LogInit: Computer: DESKTOP-S1G6JJO
+[2021.06.24-00.35.51:461][  0]LogInit: User: Koenji
+[2021.06.24-00.35.51:461][  0]LogInit: CPU Page size=4096, Cores=16
+[2021.06.24-00.35.51:461][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.06.24-00.35.51:461][  0]LogMemory: Memory total: Physical=63.9GB (64GB approx)
+[2021.06.24-00.35.51:461][  0]LogMemory: Platform Memory Stats for Windows
+[2021.06.24-00.35.51:461][  0]LogMemory: Process Physical Memory: 285.36 MB used, 285.37 MB peak
+[2021.06.24-00.35.51:461][  0]LogMemory: Process Virtual Memory: 283.22 MB used, 283.22 MB peak
+[2021.06.24-00.35.51:461][  0]LogMemory: Physical Memory: 23005.67 MB used,  42444.40 MB free, 65450.07 MB total
+[2021.06.24-00.35.51:461][  0]LogMemory: Virtual Memory: 4825.51 MB used,  42444.40 MB free, 134217728.00 MB total
+[2021.06.24-00.35.51:683][  0]LogInit: Using OS detected language (en-GB).
+[2021.06.24-00.35.51:683][  0]LogInit: Using OS detected locale (en-GB).
+[2021.06.24-00.35.51:686][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.06.24-00.35.52:243][  0]LogD3D11RHI: D3D11 adapters:
+[2021.06.24-00.35.52:337][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3090' (Feature Level 11_0)
+[2021.06.24-00.35.52:337][  0]LogD3D11RHI:       24348/0/32725 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.06.24-00.35.52:340][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.06.24-00.35.52:340][  0]LogD3D11RHI:       0/0/32725 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.06.24-00.35.52:340][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.06.24-00.35.52:352][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.06.24-00.35.52:352][  0]LogD3D11RHI:     GPU DeviceId: 0x2204 (for the marketing name, search the web for "GPU Device Id")
+[2021.06.24-00.35.52:352][  0]LogWindows: EnumDisplayDevices:
+[2021.06.24-00.35.52:352][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3090' (P:1 D:1)
+[2021.06.24-00.35.52:352][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3090' (P:0 D:0)
+[2021.06.24-00.35.52:352][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3090' (P:0 D:0)
+[2021.06.24-00.35.52:353][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3090' (P:0 D:0)
+[2021.06.24-00.35.52:353][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2021.06.24-00.35.52:353][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3090
+[2021.06.24-00.35.52:353][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2021.06.24-00.35.52:353][  0]LogD3D11RHI:      Driver Date: Unknown
+[2021.06.24-00.35.52:353][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2021.06.24-00.35.52:425][  0]LogD3D11RHI: Async texture creation enabled
+[2021.06.24-00.35.52:457][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2021.06.24-00.35.52:459][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Intermediate/Shaders/WorkingDirectory/49024/).
+[2021.06.24-00.35.52:459][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Koenji/AppData/Local/Temp/UnrealShaderWorkingDir/C5098DF140B3592A6D765DAF3943D1DA/'.
+[2021.06.24-00.35.52:459][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.06.24-00.35.53:174][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2021.06.24-00.35.53:235][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2021.06.24-00.35.53:293][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2021.06.24-00.35.53:352][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2021.06.24-00.35.53:412][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2021.06.24-00.35.53:472][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2021.06.24-00.35.53:534][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2021.06.24-00.35.53:591][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2021.06.24-00.35.53:644][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2021.06.24-00.35.53:701][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.06.24-00.35.53:759][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2021.06.24-00.35.53:816][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2021.06.24-00.35.53:873][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2021.06.24-00.35.53:931][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2021.06.24-00.35.53:988][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2021.06.24-00.35.54:102][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2021.06.24-00.35.54:102][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2021.06.24-00.35.54:151][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2021.06.24-00.35.54:260][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2021.06.24-00.35.54:299][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2021.06.24-00.35.54:356][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2021.06.24-00.35.54:415][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2021.06.24-00.35.54:473][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2021.06.24-00.35.54:532][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2021.06.24-00.35.54:532][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.06.24-00.35.55:161][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: Loaded boot cache 0.01s 8MB C:/Users/Koenji/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Koenji/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.24-00.35.55:166][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.06.24-00.35.55:178][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.06.24-00.35.55:189][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Koenji/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.06.24-00.35.55:203][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2021.06.24-00.35.55:204][  0]LogSlate: Using Freetype 2.6.0
+[2021.06.24-00.35.55:204][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.06.24-00.35.55:204][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.06.24-00.35.55:408][  0]LogAssetRegistry: FAssetRegistry took 0.0249 seconds to start up
+[2021.06.24-00.35.55:508][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.24-00.35.55:947][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2021.06.24-00.35.55:997][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2021.06.24-00.35.55:997][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.06.24-00.35.55:997][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2021.06.24-00.35.55:997][  0]LogMeshReduction: No automatic mesh merging module available
+[2021.06.24-00.35.55:997][  0]LogMeshMerging: No automatic mesh merging module available
+[2021.06.24-00.35.56:037][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2021.06.24-00.35.56:396][  0]LogNetVersion: LuxorGame , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 793289054)
+[2021.06.24-00.35.56:610][  0]LogPackageLocalizationCache: Processed 6 localized package path(s) for 2 prioritized culture(s) in 0.031704 seconds
+[2021.06.24-00.35.56:614][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2021.06.24-00.35.56:614][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
+[2021.06.24-00.35.56:614][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.06.24-00.35.56:701][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2021.06.24-00.35.59:270][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.06.24-00.35.59:318][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.06.24-00.36.00:092][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2021.06.24-00.36.00:527][  0]SourceControl: Source control is disabled
+[2021.06.24-00.36.00:527][  0]SourceControl: Source control is disabled
+[2021.06.24-00.36.00:583][  0]SourceControl: Source control is disabled
+[2021.06.24-00.36.00:638][  0]SourceControl: Source control is disabled
+[2021.06.24-00.36.01:383][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.06.24-00.36.01:668][  0]LogOcInput: OculusInput pre-init called
+[2021.06.24-00.36.01:951][  0]LogEngine: Initializing Engine...
+[2021.06.24-00.36.01:953][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.06.24-00.36.02:200][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2021.06.24-00.36.02:200][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2021.06.24-00.36.02:357][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.06.24-00.36.02:385][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2021.06.24-00.36.02:399][  0]LogInit: FAudioDevice initialized.
+[2021.06.24-00.36.02:438][  0]LogDerivedDataCache: Saved boot cache 0.04s 93MB C:/Users/Koenji/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2021.06.24-00.36.02:445][  0]LogInit: Texture streaming: Enabled
+[2021.06.24-00.36.02:609][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.06.24-00.36.02:874][  0]LogInit: Transaction tracking system initialized
+[2021.06.24-00.36.03:256][  0]BlueprintLog: New page: Editor Load
+[2021.06.24-00.36.04:353][  0]LocalizationService: Localization service is disabled
+[2021.06.24-00.36.05:171][  0]LogConsoleResponse: Display: 
+[2021.06.24-00.36.05:306][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.06.24-00.36.05:306][  0]LogCook: Display: Mobile HDR setting 1
+[2021.06.24-00.36.05:306][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2021.06.24-00.36.06:583][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/' took 0.01s
+[2021.06.24-00.36.06:638][  0]SourceControl: Source control is disabled
+[2021.06.24-00.36.06:638][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/RenderRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.06.24-00.36.06:638][  0]LightingResults: New page: Lighting Build
+[2021.06.24-00.36.06:688][  0]MapCheck: New page: Map Check
+[2021.06.24-00.36.06:688][  0]LightingResults: New page: Lighting Build
+[2021.06.24-00.36.06:895][  0]LogAIModule: Creating AISystem for world RenderRoom
+[2021.06.24-00.36.06:899][  0]LogScript: Warning: Accessed None trying to read property CreationPart
+	LuxCreationImportedPart_BP_C /Game/RenderRoom.RenderRoom:PersistentLevel.LuxCreationImportedPart_BP_29654
+	Function /Game/Chara/LuxCreationImportedPart_BP.LuxCreationImportedPart_BP_C:UserConstructionScript:0074
+[2021.06.24-00.36.06:899][  0]LogScript: Warning: Accessed None
+	LuxCreationImportedPart_BP_C /Game/RenderRoom.RenderRoom:PersistentLevel.LuxCreationImportedPart_BP_29654
+	Function /Game/Chara/LuxCreationImportedPart_BP.LuxCreationImportedPart_BP_C:UserConstructionScript:0055
+[2021.06.24-00.36.06:899][  0]LogScript: Warning: Accessed None trying to read property CreationPart
+	LuxCreationImportedPart_BP_C /Game/RenderRoom.RenderRoom:PersistentLevel.LuxCreationImportedPart_BP_29654
+	Function /Game/Chara/LuxCreationImportedPart_BP.LuxCreationImportedPart_BP_C:UserConstructionScript:01A5
+[2021.06.24-00.36.06:899][  0]LogScript: Warning: Accessed None
+	LuxCreationImportedPart_BP_C /Game/RenderRoom.RenderRoom:PersistentLevel.LuxCreationImportedPart_BP_29654
+	Function /Game/Chara/LuxCreationImportedPart_BP.LuxCreationImportedPart_BP_C:UserConstructionScript:0186
+[2021.06.24-00.36.06:901][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.06.24-00.36.06:935][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.06.24-00.36.06:974][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 39.232ms to complete.
+[2021.06.24-00.36.06:974][  0]LogFileHelpers: Loading map 'RenderRoom' took 0.336
+[2021.06.24-00.36.07:131][  0]LogCollectionManager: Loaded 0 collections in 0.001346 seconds
+[2021.06.24-00.36.07:216][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/Collections/' took 0.01s
+[2021.06.24-00.36.07:216][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Developers/Koenji/Collections/' took 0.01s
+[2021.06.24-00.36.07:216][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Collections/' took 0.01s
+[2021.06.24-00.36.07:216][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2021.06.24-00.36.07:225][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2434 classes and 515 folders.
+[2021.06.24-00.36.07:307][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0022 seconds. Added 0 classes and 0 folders.
+[2021.06.24-00.36.07:344][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0022 seconds. Added 0 classes and 0 folders.
+[2021.06.24-00.36.07:401][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2021.06.24-00.36.07:519][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0022 seconds. Added 2 classes and 3 folders.
+[2021.06.24-00.36.07:530][  0]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.06.24-00.36.07:531][  0]LogSlate: Took 0.000135 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.06.24-00.36.07:535][  0]LogSlate: Took 0.000121 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.06.24-00.36.07:592][  0]LogRenderer: Reallocating scene render targets to support 1168x624 Format 10 NumSamples 1 (Frame:1).
+[2021.06.24-00.36.07:628][  0]LogSlate: Took 0.000244 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2021.06.24-00.36.07:751][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2021.06.24-00.36.07:751][  0]LogLoad: (Engine Initialization) Total time: 19.37 seconds
+[2021.06.24-00.36.07:751][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.06.24-00.36.07:752][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2021.06.24-00.36.07:752][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2021.06.24-00.36.07:778][  0]LogAssetRegistry: Asset discovery search completed in 12.3922 seconds
+[2021.06.24-00.36.07:780][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2021.06.24-00.36.07:780][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000031 seconds (updated 0 objects)
+[2021.06.24-00.36.07:780][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.06.24-00.36.43:754][207]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2021.06.24-00.36.44:023][207]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0025 seconds. Added 113 classes and 0 folders.
+[2021.06.24-00.36.44:435][207]LogSlate: Took 0.000132 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.06.24-00.36.46:701][435]LogSlate: Took 0.000203 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.06.24-00.36.50:336][823]LogSlate: Took 0.000197 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.06.24-00.36.55:820][449]LogBlueprint: Warning: Reparenting blueprint Blueprint /Game/Stage/Common/Blurprints/LBP_StageWind.LBP_StageWind from Actor to LuxBattleStageWindActor...
+[2021.06.24-00.36.55:825][449]BlueprintLog: New page: Compile LBP_StageWind
+[2021.06.24-00.36.57:548][624]BlueprintLog: New page: Compile LBP_StageWind
+[2021.06.24-00.37.50:782][204]LogRenderer: Reallocating scene render targets to support 1220x972 Format 10 NumSamples 1 (Frame:1).
+[2021.06.24-00.37.53:143][468]LogSlate: Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.24-00.38.01:232][423]LogBlueprint: Warning: Reparenting blueprint Blueprint /Game/Stage/Common/Blurprints/NewBlueprint.NewBlueprint from Actor to LuxBattleStageShipCameraActor...
+[2021.06.24-00.38.01:236][423]BlueprintLog: New page: Compile NewBlueprint
+[2021.06.24-00.38.02:628][566]BlueprintLog: New page: Compile NewBlueprint
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.LBP_StageShipCamera:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.SKEL_LBP_StageShipCamera_C' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.LBP_StageShipCamera_C' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.LBP_StageShipCamera:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.LBP_StageShipCamera:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:743][157]LogMetaData: Removing '/Game/Stage/Common/Blurprints/LBP_StageShipCamera.LBP_StageShipCamera:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Stage/Common/Blurprints/NewBlueprint.PackageMetaData'
+[2021.06.24-00.38.24:773][157]LogSavePackage: Save=5.52ms
+[2021.06.24-00.38.24:773][157]LogSavePackage: Moving '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/LBP_StageShipCamera0377917E494DFFFD3EE4AF8834B4E924.tmp' to '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Stage/Common/Blurprints/LBP_StageShipCamera.uasset'
+[2021.06.24-00.38.24:775][157]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Stage/Common/Blurprints/LBP_StageShipCamera.uasset
+[2021.06.24-00.39.15:312][868]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Source/LuxorGame/Public/LuxBattleStageShipCameraActor.h'
+[2021.06.24-00.39.15:363][868]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Source/LuxorGame/Private/LuxBattleStageShipCameraActor.cpp'
+[2021.06.24-00.45.59:313][954]LogSlate: Took 0.000208 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2021.06.24-00.46.08:358][981]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/RenderRoom' took 0.030
+[2021.06.24-00.46.08:359][981]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Stage/Common/Blurprints/LBP_StageWind] ([1] browsable assets)...
+[2021.06.24-00.46.08:359][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Stage/Common/Blurprints/LBP_StageWind]
+[2021.06.24-00.46.08:369][981]LogSavePackage: Save=5.02ms
+[2021.06.24-00.46.08:369][981]LogSavePackage: Moving '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/LBP_StageWind_Auto17AEB11C84D245552AB2989A0B2DB3CE7.tmp' to '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/Autosaves/Game/Stage/Common/Blurprints/LBP_StageWind_Auto1.uasset'
+[2021.06.24-00.46.08:371][981]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/Autosaves/Game/Stage/Common/Blurprints/LBP_StageWind_Auto1.uasset
+[2021.06.24-00.46.08:371][981]LogFileHelpers: Auto-saving content packages took 0.013
+[2021.06.24-00.51.03:306][866]LogHotReload: New module detected: UE4Editor-LuxorGame-1457.dll
+[2021.06.24-00.51.03:995][869]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.24-00.51.04:116][869]LogClass: Could not find existing class LuxBattleStageShipCameraActor in package /Script/LuxorGame for HotReload, assuming new class
+[2021.06.24-00.51.04:122][869]LogClass: ELuxEffectCategory HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPSApplyNodeTransformType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPSTimeGroup HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationColorParamType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationMenuHomeItem HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationColorPaletteType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxModelPositioningType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationMenuWeaponAndStyleItem HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxProfileDatabaseTableId HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationMenuBodyItem HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationDecorMenuFactorDataKey HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxModelColorType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxMuscleType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxWeaponAssetType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxWeaponVariation HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxEffectVertexClutId HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxTracePartsId HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxStickerGuide HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxStickerMode HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxSoulChargeType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxBodyScale HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCharacter HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxFightStyle HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxRace HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxCreationModelType HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartPriority HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartsBreak HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxOffsetPartsSymmetryFlag HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxOffsetParentBone HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartsSE HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxGender HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxColorEditableFlag HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartVariation HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartSlot HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ELuxPartCategory HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: ColorData HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxVFxSettingListItem HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxParticleSystemSettingListItem HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxPSSetting HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxPSFadeoutSetting HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxPSOverrideSetting HotReload.
+[2021.06.24-00.51.04:122][869]LogClass: LuxVFxMaterialParamsInfo HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxVFxMaterialParams HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxVFxColorParam HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxVFxVectorParam HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxVFxScalarParam HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxGroundDebrisSettingListItem HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxGroundDebrisSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxAnimationDebrisSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxPhysicsDebrisSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxPhysicsDebrisData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBRacialColorSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBColorPaletteParameter HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBEquipmentPartsSelectMenuUIData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBHomeMenuUIData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBWeaponAndStyleSelectMenuUIData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBDecorMenuUIData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBBodySelectMenuUIData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBStickerGuideOption HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBRegularProfileTemplateData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBRadarChartData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBStyleData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBRegularCharaColorData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBWeaponData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxWeaponRawAsset HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxWeaponVariation HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxNamedAssetReference HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxTraceColorApplySettingList HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxTraceColorApplySetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxTraceColorPalletSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxPermanentEffectSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxCreationSkinColor HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxCreationSingleColor HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxProfileDBPartsData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxBreastSwingParam HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxFacialPaths HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxOffsetPartSetting HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxOffsetPart HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxOffsetPartParent HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxVariationRequest HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxMeshDataVariation HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxSlotMeshData HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxBodyScale HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxPartsSticker HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxStickerSlot HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxCreationPartsColor HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxCreationColorSlot HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxCreationColorSlotTexturePattern HotReload.
+[2021.06.24-00.51.04:123][869]LogClass: LuxPartCategory HotReload.
+[2021.06.24-00.51.04:128][869]LogHotReload: Re-instancing LuxBattleStageShipCameraActor after hot-reload.
+[2021.06.24-00.51.04:303][869]LogHotReload: Re-instancing LuxCreationImportedPart after hot-reload.
+[2021.06.24-00.51.04:365][869]LogContentBrowser: Native class hierarchy updated for 'LuxorGame' in 0.0025 seconds. Added 20 classes and 3 folders.
+[2021.06.24-00.51.04:368][869]Display: HotReload successful (0 functions remapped  55 scriptstructs remapped)
+[2021.06.24-00.51.04:730][869]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2438 classes and 522 folders.
+[2021.06.24-00.51.04:736][869]Display: HotReload took  0.7s.
+[2021.06.24-00.56.19:264][696]BlueprintLog: New page: Compile LBP_StageShipCamera
+[2021.06.24-00.56.26:177][414]LogSavePackage: Save=4.98ms
+[2021.06.24-00.56.26:177][414]LogSavePackage: Moving '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/LBP_StageWindD666DD5E421142D2CDA1CB97C2A7D4F4.tmp' to '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Stage/Common/Blurprints/LBP_StageWind.uasset'
+[2021.06.24-00.56.26:179][414]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Stage/Common/Blurprints/LBP_StageWind.uasset
+[2021.06.24-00.56.27:104][511]BlueprintLog: New page: Compile LBP_StageWind
+[2021.06.24-00.56.35:260][424]Candidate modules for hot reload:
+[2021.06.24-00.56.35:260][424]  LuxorGame
+[2021.06.24-00.56.35:260][424]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe LuxorGame -ModuleWithSuffix LuxorGame 6480 Win64 Development -editorrecompile -canskiplink "C:/Users/Koenji/Documents/UnrealMods/LuxorGame/LuxorGame.uproject" ]
+[2021.06.24-00.56.35:262][424]Warning: Starting HotReload took  0.0s.
+[2021.06.24-00.56.44:400][515]CompilerResultsLog: New page: Compilation - 24 Jun 2021 02:56:44
+[2021.06.24-00.56.44:400][515]CompilerResultsLog: Compiling game modules for hot reload
+[2021.06.24-00.56.44:400][515]CompilerResultsLog: Parsing headers for LuxorGameEditor
+[2021.06.24-00.56.44:400][515]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Koenji\Documents\UnrealMods\LuxorGame\LuxorGame.uproject" "C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\LuxorGameEditor\Development\LuxorGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2021.06.24-00.56.44:400][515]CompilerResultsLog: Error: C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Source/LuxorGame/Public/LuxBattleStageShipCameraActor.h(31)  : LogCompile: Error: Cannot specify a property as being both BlueprintReadOnly and BlueprintReadWrite.
+[2021.06.24-00.56.44:401][515]CompilerResultsLog: Error: C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Source/LuxorGame/Public/LuxBattleStageShipCameraActor.h(34)  : LogCompile: Error: Cannot specify a property as being both BlueprintReadOnly and BlueprintReadWrite.
+[2021.06.24-00.56.44:401][515]CompilerResultsLog: Error: UnrealHeaderTool failed for target 'LuxorGameEditor' (platform: Win64, module info: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\LuxorGameEditor\Development\LuxorGameEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+[2021.06.24-00.56.44:401][515]LogMainFrame: MainFrame: Module compiling took 9.145 seconds
+[2021.06.24-00.56.44:401][515]Warning: HotReload failed, recompile failed
+[2021.06.24-00.57.40:960][ 67]Candidate modules for hot reload:
+[2021.06.24-00.57.40:961][ 67]  LuxorGame
+[2021.06.24-00.57.40:961][ 67]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe LuxorGame -ModuleWithSuffix LuxorGame 2264 Win64 Development -editorrecompile -canskiplink "C:/Users/Koenji/Documents/UnrealMods/LuxorGame/LuxorGame.uproject" ]
+[2021.06.24-00.57.40:963][ 67]Warning: Starting HotReload took  0.0s.
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: New page: Compilation - 24 Jun 2021 02:57:57
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: Compiling game modules for hot reload
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: Parsing headers for LuxorGameEditor
+[2021.06.24-00.57.57:209][914]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Koenji\Documents\UnrealMods\LuxorGame\LuxorGame.uproject" "C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\LuxorGameEditor\Development\LuxorGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: Reflection code generated for LuxorGameEditor in 5.7491419 seconds
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: Performing 31 actions (24 in parallel)
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: ColorData.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxCreationProfile.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxRegularProfile.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxorGame.init.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxProfileBase.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxStageHideableMeshActor.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxFacialAsset.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxStageVisibilitySwitcher.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxorGame.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxCreationTextureAsset.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxStageMeshActor.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxStageVisibilitySwitcher.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxAssetPathsBase.gen.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxorGame.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxWeaponAssetPaths.cpp
+[2021.06.24-00.57.57:209][914]CompilerResultsLog: LuxBattleStageShipCameraActor.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: ColorData.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxAssetPathsBase.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxCreationProfile.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxBattleStageShipCameraActor.gen.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxCreationImportedPart.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxWeaponAssetPaths.gen.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxCreationImportedPart.gen.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxFacialAsset.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: LuxProfileBase.cpp
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\users\koenji\documents\unrealmods\luxorgame\source\luxorgame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledc:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: cc:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledC:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledC:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: cc
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledC:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledC:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiledC:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: 
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:210][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: LuxRegularProfile.cpp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: LuxCreationTextureAsset.cpp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: LuxStageHideableMeshActor.cpp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: LuxStageMeshActor.cpp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19) : warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10) : note: see declaration of 'TEnumAsByte_EnumClass<true>'
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Error: C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Source\LuxorGame\LuxorGame.h(737) : note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: [30/31] Link UE4Editor-LuxorGame-2264.dll
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: [31/31] Link UE4Editor-LuxorGame-2264.lib
+[2021.06.24-00.57.57:211][914]CompilerResultsLog:    Creating library C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame-2264.suppressed.lib and object C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame-2264.suppressed.exp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog:    Creating library C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame-2264.lib and object C:\Users\Koenji\Documents\UnrealMods\LuxorGame\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame-2264.exp
+[2021.06.24-00.57.57:211][914]CompilerResultsLog: Total build time: 16.07 seconds (Local executor: 6.26 seconds)
+[2021.06.24-00.57.57:211][914]LogMainFrame: MainFrame: Module compiling took 16.256 seconds
+[2021.06.24-00.57.57:328][914]LogClass: Could not find existing class LuxBattleStageShipCameraActor in package /Script/LuxorGame for HotReload, assuming new class
+[2021.06.24-00.57.57:339][914]LogClass: ELuxEffectCategory HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxPSApplyNodeTransformType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxPSTimeGroup HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationColorParamType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationMenuHomeItem HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationColorPaletteType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxModelPositioningType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationMenuWeaponAndStyleItem HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxProfileDatabaseTableId HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationMenuBodyItem HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationDecorMenuFactorDataKey HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxModelColorType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxMuscleType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxWeaponAssetType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxWeaponVariation HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxEffectVertexClutId HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxTracePartsId HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxStickerGuide HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxStickerMode HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxSoulChargeType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxBodyScale HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCharacter HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxFightStyle HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxRace HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxCreationModelType HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxPartPriority HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxPartsBreak HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxOffsetPartsSymmetryFlag HotReload.
+[2021.06.24-00.57.57:339][914]LogClass: ELuxOffsetParentBone HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxPartsSE HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxGender HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxColorEditableFlag HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxPartVariation HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxPartSlot HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ELuxPartCategory HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: ColorData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxBattleStageShipScendParam HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxSettingListItem HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxParticleSystemSettingListItem HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPSSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPSFadeoutSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPSOverrideSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxMaterialParamsInfo HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxMaterialParams HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxColorParam HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxVectorParam HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVFxScalarParam HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxGroundDebrisSettingListItem HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxGroundDebrisSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxAnimationDebrisSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPhysicsDebrisSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPhysicsDebrisData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBRacialColorSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBColorPaletteParameter HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBEquipmentPartsSelectMenuUIData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBHomeMenuUIData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBWeaponAndStyleSelectMenuUIData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBDecorMenuUIData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBBodySelectMenuUIData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBStickerGuideOption HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBRegularProfileTemplateData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBRadarChartData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBStyleData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBRegularCharaColorData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBWeaponData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxWeaponRawAsset HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxWeaponVariation HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxNamedAssetReference HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxTraceColorApplySettingList HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxTraceColorApplySetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxTraceColorPalletSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPermanentEffectSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxCreationSkinColor HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxCreationSingleColor HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxProfileDBPartsData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxBreastSwingParam HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxFacialPaths HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxOffsetPartSetting HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxOffsetPart HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxOffsetPartParent HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxVariationRequest HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxMeshDataVariation HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxSlotMeshData HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxBodyScale HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxPartsSticker HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxStickerSlot HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxCreationPartsColor HotReload.
+[2021.06.24-00.57.57:340][914]LogClass: LuxCreationColorSlot HotReload.
+[2021.06.24-00.57.57:341][914]LogClass: LuxCreationColorSlotTexturePattern HotReload.
+[2021.06.24-00.57.57:341][914]LogClass: LuxPartCategory HotReload.
+[2021.06.24-00.57.57:345][914]LogHotReload: Re-instancing LuxBattleStageShipCameraActor after hot-reload.
+[2021.06.24-00.57.57:573][914]LogHotReload: Re-instancing LuxCreationImportedPart after hot-reload.
+[2021.06.24-00.57.57:647][914]LogContentBrowser: Native class hierarchy updated for 'LuxorGame' in 0.0023 seconds. Added 20 classes and 3 folders.
+[2021.06.24-00.57.57:649][914]Display: HotReload successful (0 functions remapped  56 scriptstructs remapped)
+[2021.06.24-00.57.57:840][914]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2438 classes and 522 folders.
+[2021.06.24-00.57.57:840][914]Display: HotReload took 16.9s.
+[2021.06.24-00.58.16:806][ 99]BlueprintLog: New page: Compile LBP_StageShipCamera
+[2021.06.24-00.59.17:350][918]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.06.24-00.59.18:019][980]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.06.24-00.59.18:171][981]Cmd: QUIT_EDITOR
+[2021.06.24-00.59.18:190][981]LogExit: Preparing to exit.
+[2021.06.24-00.59.18:752][981]LogDirectoryWatcher: A directory notification for 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/' was aborted.
+[2021.06.24-00.59.18:782][981]LogExit: Editor shut down
+[2021.06.24-00.59.18:786][981]LogExit: Transaction tracking system shut down
+[2021.06.24-00.59.18:926][981]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2021.06.24-00.59.18:926][981]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Koenji/Documents/UnrealMods/LuxorGame/Content/' was aborted.
+[2021.06.24-00.59.18:926][981]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2021.06.24-00.59.18:926][981]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Experimental/ControlRig/Content/' was aborted.
+[2021.06.24-00.59.18:926][981]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2021.06.24-00.59.18:927][981]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2021.06.24-00.59.19:002][981]LogExit: Object subsystem successfully closed.
+[2021.06.24-00.59.19:020][981]LogD3D11RHI: Shutdown
+[2021.06.24-00.59.19:020][981]LogD3D11RHI: CleanupD3DDevice
+[2021.06.24-00.59.19:101][981]LogD3D11RHI: ~FD3D11DynamicRHI
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module LuxorGame (546)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module BlueprintGraph (544)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (542)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (540)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module WorldBrowser (538)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module SceneOutliner (536)
+[2021.06.24-00.59.19:117][981]LogModuleManager: Shutting down and abandoning module AddContentDialog (534)
+[2021.06.24-00.59.19:117][981]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.17/FeaturePacks/' was aborted.
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module WidgetCarousel (533)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module EditorWidgets (530)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module CollectionManager (528)
+[2021.06.24-00.59.19:118][981]LogDirectoryWatcher: A directory notification for 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Collections/' was aborted.
+[2021.06.24-00.59.19:118][981]LogDirectoryWatcher: A directory notification for 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Content/Developers/Koenji/Collections/' was aborted.
+[2021.06.24-00.59.19:118][981]LogDirectoryWatcher: A directory notification for 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Saved/Collections/' was aborted.
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module StatsViewer (526)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module FoliageEdit (524)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module LandscapeEditor (522)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module MeshPaintMode (520)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (518)
+[2021.06.24-00.59.19:118][981]LogModuleManager: Shutting down and abandoning module ActorPickerMode (516)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module GeometryMode (514)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module TextureAlignMode (512)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module BspMode (510)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (508)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module HardwareSurvey (506)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (504)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AutomationWorker (502)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (500)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (498)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module PlacementMode (497)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (494)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (492)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (490)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (488)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (486)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module Media (485)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (482)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module ControlRigEditor (480)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module CharacterAI (478)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AudioCapture (476)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module SequenceRecorder (475)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module SmartSnapping (472)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module SessionServices (470)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module ViewportSnapping (468)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module ViewportInteraction (466)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module ClothPainter (464)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module LogVisualizer (462)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module IntroTutorials (460)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (459)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (456)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (454)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (452)
+[2021.06.24-00.59.19:119][981]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (451)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (448)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (446)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (444)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module InputBindingEditor (442)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module MergeActors (440)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module SizeMap (438)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module TreeMap (436)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module ReferenceViewer (434)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (432)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module LocalizationService (431)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module HardwareTargeting (428)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (426)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module UndoHistory (424)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module XmlParser (422)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module Blutility (420)
+[2021.06.24-00.59.19:141][981]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (418)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (417)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (414)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module SettingsEditor (412)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module ProjectLauncher (410)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module SessionFrontend (408)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module ProfilerClient (406)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module DeviceManager (404)
+[2021.06.24-00.59.19:142][981]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (403)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module AutomationController (400)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module AutomationWindow (398)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module Layers (396)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (394)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module DetailCustomizations (392)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module PackagesDialog (390)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module Persona (388)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (387)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module AnimGraph (385)
+[2021.06.24-00.59.19:184][981]LogModuleManager: Shutting down and abandoning module Kismet (382)
+[2021.06.24-00.59.19:195][981]LogModuleManager: Shutting down and abandoning module ClassViewer (380)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module Toolbox (378)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module ModuleUI (376)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module MovieSceneTools (374)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module OutputLog (372)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module GammaUI (370)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module Documentation (368)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (366)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module MovieScene (364)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module Niagara (362)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module NiagaraEditor (361)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (358)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module LauncherPlatform (356)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module AnalyticsET (354)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module PortalServices (352)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module PortalRpc (350)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module MessagingRpc (348)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module AIModule (346)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module GameplayDebugger (345)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module AITestSuite (343)
+[2021.06.24-00.59.19:196][981]LogModuleManager: Shutting down and abandoning module ProfilerService (340)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module TaskGraph (338)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module SteamVRController (336)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (334)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (332)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module OculusInput (330)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (328)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (326)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module CableComponent (324)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (322)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module AndroidPermission (320)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (316)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module HTML5Networking (314)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module CodeView (312)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module AlembicImporter (310)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module AlembicLibrary (309)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module GeometryCache (308)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (307)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (302)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module PluginBrowser (300)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (298)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (296)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module DesktopPlatform (295)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module UObjectPlugin (292)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (290)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (288)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module GitSourceControl (286)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module SourceControl (285)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (282)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (280)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (278)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module Paper2DEditor (276)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module MeshPaint (275)
+[2021.06.24-00.59.19:429][981]LogModuleManager: Shutting down and abandoning module LevelEditor (273)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (272)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module MainFrame (270)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module HotReload (269)
+[2021.06.24-00.59.19:430][981]LogDirectoryWatcher: A directory notification for 'C:/Users/Koenji/Documents/UnrealMods/LuxorGame/Binaries/Win64' was aborted.
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (262)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (260)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module PhysXVehicles (258)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module OculusEditor (256)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (254)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (252)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (250)
+[2021.06.24-00.59.19:430][981]LogModuleManager: Shutting down and abandoning module UdpMessaging (248)
+[2021.06.24-00.59.19:531][981]LogModuleManager: Shutting down and abandoning module TcpMessaging (246)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module ControlRig (244)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
+[2021.06.24-00.59.19:631][981]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
+[2021.06.24-00.59.19:632][981]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
+[2021.06.24-00.59.19:632][981]LogModuleManager: Shutting down and abandoning module Paper2D (228)
+[2021.06.24-00.59.19:632][981]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
+[2021.06.24-00.59.19:632][981]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module Overlay (216)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module VREditor (210)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module UMG (196)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module Sequencer (194)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module MessageLog (191)
+[2021.06.24-00.59.19:633][981]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
+[2021.06.24-00.59.19:634][981]LogModuleManager: Shutting down and abandoning module Slate (184)
+[2021.06.24-00.59.19:634][981]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module MRMesh (180)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module Networking (172)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module Core (168)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
+[2021.06.24-00.59.19:635][981]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
+[2021.06.24-00.59.19:636][981]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
+[2021.06.24-00.59.19:636][981]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
+[2021.06.24-00.59.19:636][981]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
+[2021.06.24-00.59.19:636][981]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
+[2021.06.24-00.59.19:636][981]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2021.06.24-00.59.19:682][981]LogDerivedDataCache: Shutdown
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2021.06.24-00.59.19:682][981]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module SteamVR (54)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2021.06.24-00.59.19:683][981]LogOnline: Display: Unloading online subsystem: NULL
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2021.06.24-00.59.19:683][981]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2021.06.24-00.59.19:683][981]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.06.24-00.59.19:683][981]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7ACF938C-4805-FB88-C40E-B2A2D8984BBF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.2-3658906%2B%2B%2BUE4%2BRelease-4.17&UserID=bf1bdc844252f1d0dffcee8447b64378%7Caa5777b9639841668db27428af33b1ef%7C6de94820-389e-4e98-8e30-4160ccda49f0&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2021.06.24-00.59.19:707][981]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2021.06.24-00.59.19:709][981]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2021.06.24-00.59.19:710][981]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2021.06.24-00.59.19:719][981]LogExit: Exiting.
+[2021.06.24-00.59.19:726][981]Log file closed, 06/24/21 01:59:19
