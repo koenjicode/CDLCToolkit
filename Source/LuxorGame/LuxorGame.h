@@ -710,6 +710,16 @@ enum class ELuxEffectCategory : uint8 {
 	EEC_Chara   UMETA(DisplayName = "Chara")
 };
 
+UENUM(BlueprintType)
+enum class ELuxStageAssetType : uint8 {
+	ESA_HitData				UMETA(DisplayName = "Hit Data"),
+	ESA_IntroCameraData     UMETA(DisplayName = "Intro Camera Data"),
+	ESA_HitData2            UMETA(DisplayName = "Hit Data 2"),
+	ESA_StartCameraData     UMETA(DisplayName = "Start Camera Data")
+
+};
+
+
 /**---------------------------------------------------------------------------------------
  * Structs
  *----------------------------------------------------------------------------------------
@@ -1623,6 +1633,31 @@ struct FLuxBattleStageShipScendParam {
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float RollCoeffMin;
 
+};
+
+USTRUCT(BlueprintType)
+struct FLuxStageRawAsset {
+	GENERATED_USTRUCT_BODY()
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TEnumAsByte<ELuxStageAssetType> Type;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FString Path;
+};
+
+USTRUCT(BlueprintType)
+struct FLuxStageSetting {
+	GENERATED_USTRUCT_BODY()
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bAnomalyStageVFxEnabled;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bWet;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bBreath;
 };
 
 /**---------------------------------------------------------------------------------------
