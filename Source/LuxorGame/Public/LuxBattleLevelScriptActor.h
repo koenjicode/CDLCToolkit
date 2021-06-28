@@ -3,28 +3,22 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "LuxLevelScriptActor.h"
 #include "LuxBattleLevelScriptActor.generated.h"
 
-UCLASS()
-class LUXORGAME_API ALuxBattleLevelScriptActor : public AActor
+/**
+ * 
+ */
+UCLASS(Blueprintable)
+class LUXORGAME_API ALuxBattleLevelScriptActor : public ALuxLevelScriptActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ALuxBattleLevelScriptActor();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	UFUNCTION(BlueprintCallable)
-	static void OnRoundStarted(int &CurrentRound);
+public:
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnRoundStarted(int CurrentRound);
 
 	
+	
+
 };
