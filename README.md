@@ -1,4 +1,4 @@
-# CDLCToolkit
+# CDLCToolkit \ SCVI LuxorGame project
 Github for the CDLC Toolkit, a project that dummies various classes and materials for creating things for SCVI such as equipment parts, profiles, stage elements etc.
 
 ## Setup
