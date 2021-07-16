@@ -25,6 +25,10 @@
 		{
 			"Name": "CodeView",
 			"Enabled": true
+		},
+		{
+			"Name": "Ansel",
+			"Enabled": true
 		}
 	]
 }

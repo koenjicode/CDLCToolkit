@@ -12,6 +12,7 @@
 #include "ParticleHelper.h"
 #include "Particles/ParticleSystem.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "LuxBattleStageInfinityTileActor.h"
 #include "LuxorGame.Generated.h"
 
 /**---------------------------------------------------------------------------------------
@@ -1719,6 +1720,30 @@ class LUXORGAME_API ULuxVFxSettingListDataAsset : public UDataAsset
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TArray<FLuxVFxSettingListItem> VFxSettingList;
+
+
+};
+
+UCLASS(ClassGroup = Rendering, meta = (BlueprintSpawnableComponent), Blueprintable)
+class LUXORGAME_API ULuxBatleStageInfinitySettingDataAsset : public UDataAsset
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int MapChipSize;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int MapChipTilingCount;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<TAssetPtr<ALuxBattleStageInfinityTileActor>> MapChipList;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int MaxDistanecFromOrigin;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool UseNormalBattleCamera;
 
 
 };

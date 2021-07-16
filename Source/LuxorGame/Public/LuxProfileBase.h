@@ -30,10 +30,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
 		TEnumAsByte<ELuxGender> Gender;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character|Effects")
 		TEnumAsByte<ELuxSoulChargeType> SoulChargeType;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character|Effects")
 		int32 hitEffectPresetId;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")

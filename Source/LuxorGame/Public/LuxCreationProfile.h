@@ -28,37 +28,37 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
 		TArray<FLuxPartCategory> Parts;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin|Colors")
 		FLuxCreationSkinColor SkinColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin|Colors")
 		FLuxCreationSkinColor SkinEmission;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
 		FLuxCreationSingleColor IrisColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
 		FLuxCreationSingleColor IrisEmission;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
 		FLuxCreationSingleColor ScleraColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
 		FLuxCreationSingleColor ScleraEmission;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair|Colors")
 		FLuxCreationSingleColor EyebrowColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair|Colors")
 		FLuxCreationSingleColor beardColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|Colors")
 		TArray<FLuxCreationPartsColor> PartsColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon|Colors")
 		FLuxCreationPartsColor WeaponColor;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|Extra Part")
 		TArray<FLuxOffsetPartSetting> ExtraPartsSettings;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sticker")
@@ -67,40 +67,40 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "VFX")
 		TArray <FLuxPermanentEffectSetting> PermanentEffects;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "VFX")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "VFX|Colors")
 		TArray <FLuxTraceColorPalletSetting> TraceColorSettings;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
 		bool PartsBreakableLower;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
 		bool PartsBreakableMiddle;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
 		bool PartsBreakableUpper;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Material that replaces all materials that have IsSkin set to 1.0.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Material that replaces all materials that have IsSkin set to 1.0.
 		TAssetPtr <UMaterialInstance> SkinReplaceMaterial;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // LuxCreationTextureAsset that replaces the eyebrow texture.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair") // LuxCreationTextureAsset that replaces the eyebrow texture.
 		TAssetPtr<ULuxCreationTextureAsset> EyebrowTexture;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Body") // Folder path to custom textures. Ex: /Game/Chara/00c/Texture/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Body|Skin") // Folder path to custom textures. Ex: /Game/Chara/00c/Texture/
 		FString EmissionMaskPath;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Base filename shared between textures. Ex: nude_r00c
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Base filename shared between textures. Ex: nude_r00c
 		FString EmissionMaskBaseName;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Muscle type. Unique is used to load textures from 'UniqueTexturePath' + 'UniqueTextureBaseName'.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Muscle type. Unique is used to load textures from 'UniqueTexturePath' + 'UniqueTextureBaseName'.
 		ELuxMuscleType Muscle;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Specifies if a custom skin color mask is used.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Specifies if a custom skin color mask is used.
 		bool bUniqueColorMask;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Folder path to custom textures. Must use 'Unique' muscle type. Ex: /Game/Chara/00c/Texture/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Folder path to custom textures. Must use 'Unique' muscle type. Ex: /Game/Chara/00c/Texture/
 		FString UniqueTexturePath;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body") // Base filename shared between textures. Must use 'Unique' muscle type. Ex: nude_r00c 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Base filename shared between textures. Must use 'Unique' muscle type. Ex: nude_r00c 
 		FString UniqueTextureBaseName;
 
 	
