@@ -17,15 +17,15 @@ class LUXORGAME_API ALuxBattleManager : public ALuxActor
 {
 	GENERATED_BODY()
 public:	
-	UFUNCTION(BlueprintCallable)
-	static ALuxBattleSetup* GetBattleSetup()
+	UFUNCTION(BlueprintPure)
+	ALuxBattleSetup* GetBattleSetup()
 	{
 		ALuxBattleSetup* battle = NewObject<ALuxBattleSetup>();
 			return battle;
 	}
 	
-	UFUNCTION(BlueprintCallable)
-	static bool IsOnline();
+	UFUNCTION(BlueprintPure)
+	bool IsOnline();
 	
 	
 };

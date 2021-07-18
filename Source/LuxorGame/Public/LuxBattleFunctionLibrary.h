@@ -16,26 +16,26 @@ class LUXORGAME_API ULuxBattleFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:	
-	UFUNCTION(BlueprintCallable,meta=(WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure,meta=(WorldContext = "WorldContext"))
 	static ALuxBattleGameMode* GetBattleGameMode(UObject* WorldContext);
 
 
-	UFUNCTION(BlueprintCallable,meta=(WorldContext="WorldContext"))
+	UFUNCTION(BlueprintPure,meta=(WorldContext="WorldContext"))
 		static ALuxBattleManager* GetBattleManager(UObject* WorldContext);
 
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContext"))
 		static bool BattlePauseEnabled(UObject* WorldContext);
 
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContext"))
 		static bool IsBattleOnline(UObject* WorldContext);
 
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContext"))
 		static bool IsBattlePlaying(UObject* WorldContext);
 
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContext"))
 		static bool IsFinishBlow(UObject* WorldContext);
 
-	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
+	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContext"))
 		static bool IsMatchFinished(UObject* WorldContext);
 
 	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
