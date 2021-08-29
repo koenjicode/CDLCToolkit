@@ -40,7 +40,7 @@ bool ULuxBattleFunctionLibrary::IsMatchFinished(UObject * WorldContext)
 	return false;
 }
 
-void ULuxBattleFunctionLibrary::SetImmortaltiy(UObject * WorldContext, int32 inPlayerIndex, bool bImmortal)
+void ULuxBattleFunctionLibrary::SetImmortality(UObject * WorldContext, int32 inPlayerIndex, bool bImmortal)
 {
 }
 

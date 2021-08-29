@@ -39,7 +39,7 @@ public:
 		static bool IsMatchFinished(UObject* WorldContext);
 
 	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
-		static void SetImmortaltiy(UObject* WorldContext,int32 inPlayerIndex,bool bImmortal);
+		static void SetImmortality(UObject* WorldContext,int32 inPlayerIndex,bool bImmortal);
 
 	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
 		static void SetSoulGaugeInfinity(UObject* WorldContext,int32 inPlayerIndex,bool bInfinite);
