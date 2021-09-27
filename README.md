@@ -11,3 +11,6 @@ https://www.dropbox.com/sh/fspksjo2ux6kmkb/AADYDQfy3F3CEeg_PgvvRZCfa/Tutorials?d
 - Stage tutorial by SiloZen:
 https://docs.google.com/document/d/1I2zrnOMtgQzO2R7_qFy2BC6Br5r4iDOfEn_F34IB2T4/edit?usp=sharing
 
+- Pdf documenting what each option in each class / material does. (Will be updated over time for the missing classes atm):
+https://www.dropbox.com/s/erg6cq5ip8aojgf/LuxorGame_Doc.pdf?dl=0
+
