@@ -1,0 +1,3 @@
+C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Source\LuxorGame\LuxorGame.Build.cs
+C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Source\LuxorGame.Target.cs
+C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Source\LuxorGameEditor.Target.cs

@@ -1,15 +1,17 @@
-﻿Log file open, 06/24/21 06:43:31
+﻿Log file open, 11/03/21 12:04:12
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: LuxorGame
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-968451826) SRandInit(-968451826).
-LogTaskGraph: Started task graph with 5 named threads and 50 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.761751
+LogInit: Display: RandInit(-1496206444) SRandInit(-1496206444).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.969502
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -61,6 +63,7 @@ LogPluginManager: Mounting plugin IOSDeviceProfileSelector
 LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
 LogPluginManager: Mounting plugin LocationServicesBPLibrary
 LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin Ansel
 LogPluginManager: Mounting plugin OculusVR
 LogPluginManager: Mounting plugin PhysXVehicles
 LogPluginManager: Mounting plugin ProceduralMeshComponent
@@ -68,24 +71,199 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogInit: Warning: Incompatible or missing module: UE4Editor-LuxorGame.dll
-LogExit: Preparing to exit.
-LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-LogModuleManager: Shutting down and abandoning module Landscape (26)
-LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-LogModuleManager: Shutting down and abandoning module Renderer (16)
-LogModuleManager: Shutting down and abandoning module Engine (14)
-LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-LogModuleManager: Shutting down and abandoning module PakFile (2)
-LogExit: Exiting.
-Log file closed, 06/24/21 06:43:39
+Running C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe LuxorGame Development Win64 -project="C:/Users/logza/Documents/Unreal Projects/LuxorGame2/LuxorGame.uproject" -editorrecompile -progress -NoHotReloadFromIDE
+Creating makefile for LuxorGame (no existing makefile)
+Performing full C++ include scan (no include cache file)
+@progress push 5%
+Parsing headers for LuxorGameEditor
+  Running UnrealHeaderTool "C:\Users\logza\Documents\Unreal Projects\LuxorGame2\LuxorGame.uproject" "C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Intermediate\Build\Win64\LuxorGameEditor\Development\LuxorGameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for LuxorGameEditor in 7.7421002 seconds
+@progress pop
+Performing 7 actions (4 in parallel)
+[2/7] Resource ModuleVersionResource.rc.inl
+[3/7] Resource PCLaunch.rc
+SharedPCH.Engine.cpp
+Module.LuxorGame.gen.cpp
+Module.LuxorGame.cpp
+c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+c:\users\logza\documents\unreal projects\luxorgame2\source\luxorgame\LuxorGame.h(748): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(19): warning C4996: 'TEnumAsByte_EnumClass<true>': TEnumAsByte is not intended for use with enum classes - please derive your enum class from uint8 instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+c:\program files\epic games\ue_4.17\engine\source\runtime\core\public\Containers/EnumAsByte.h(10): note: see declaration of 'TEnumAsByte_EnumClass<true>'
+C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Source\LuxorGame\LuxorGame.h(748): note: see reference to class template instantiation 'TEnumAsByte<ELuxBodyScale>' being compiled
+[6/7] Link UE4Editor-LuxorGame.dll
+[7/7] Link UE4Editor-LuxorGame.lib
+   Creating library C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame.lib and object C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame.exp
+   Creating library C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame.suppressed.lib and object C:\Users\logza\Documents\Unreal Projects\LuxorGame2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-LuxorGame.suppressed.exp
+Total build time: 81.42 seconds (Local executor: 25.76 seconds)
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2021.11.03-17.05.44:644][  0]LogInit: Selected Device Profile: [Windows]
+[2021.11.03-17.05.44:644][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.11.03-17.05.44:663][  0]LogInit: Computer: DESKTOP-3VQ88CM
+[2021.11.03-17.05.44:663][  0]LogInit: User: logza
+[2021.11.03-17.05.44:663][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.11.03-17.05.44:663][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.11.03-17.05.44:663][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2021.11.03-17.05.44:663][  0]LogMemory: Platform Memory Stats for Windows
+[2021.11.03-17.05.44:663][  0]LogMemory: Process Physical Memory: 284.48 MB used, 284.48 MB peak
+[2021.11.03-17.05.44:663][  0]LogMemory: Process Virtual Memory: 275.45 MB used, 275.45 MB peak
+[2021.11.03-17.05.44:663][  0]LogMemory: Physical Memory: 9445.21 MB used,  23251.29 MB free, 32696.50 MB total
+[2021.11.03-17.05.44:663][  0]LogMemory: Virtual Memory: 4851.00 MB used,  23251.29 MB free, 134217728.00 MB total
+[2021.11.03-17.05.46:491][  0]LogInit: Using OS detected language (en-US).
+[2021.11.03-17.05.46:491][  0]LogInit: Using OS detected locale (en-US).
+[2021.11.03-17.05.46:566][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.11.03-17.05.50:377][  0]LogD3D11RHI: D3D11 adapters:
+[2021.11.03-17.05.50:503][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2021.11.03-17.05.50:503][  0]LogD3D11RHI:       8079/0/16348 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.11.03-17.05.50:506][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.11.03-17.05.50:506][  0]LogD3D11RHI:       0/0/16348 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.11.03-17.05.50:506][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.11.03-17.05.50:513][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.11.03-17.05.50:513][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2021.11.03-17.05.50:513][  0]LogWindows: EnumDisplayDevices:
+[2021.11.03-17.05.50:513][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2021.11.03-17.05.50:513][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2021.11.03-17.05.50:514][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2021.11.03-17.05.50:514][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2021.11.03-17.05.50:514][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2021.11.03-17.05.50:514][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2021.11.03-17.05.50:514][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2021.11.03-17.05.50:514][  0]LogD3D11RHI:      Driver Date: Unknown
+[2021.11.03-17.05.50:514][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2021.11.03-17.05.50:601][  0]LogD3D11RHI: Async texture creation enabled
+[2021.11.03-17.05.50:664][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.11.03-17.05.50:674][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/logza/Documents/Unreal Projects/LuxorGame2/Intermediate/Shaders/WorkingDirectory/12960/).
+[2021.11.03-17.05.50:674][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/logza/AppData/Local/Temp/UnrealShaderWorkingDir/57FBC7E64334D347BB5EC3B18FA06D46/'.
+[2021.11.03-17.05.50:675][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.11.03-17.05.53:875][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2021.11.03-17.05.54:216][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2021.11.03-17.05.54:562][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2021.11.03-17.05.54:903][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2021.11.03-17.05.55:264][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2021.11.03-17.05.55:608][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2021.11.03-17.05.55:950][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2021.11.03-17.05.56:291][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2021.11.03-17.05.56:655][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2021.11.03-17.05.57:015][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2021.11.03-17.05.57:377][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2021.11.03-17.05.57:748][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2021.11.03-17.05.58:107][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2021.11.03-17.05.58:446][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2021.11.03-17.05.58:795][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2021.11.03-17.05.59:479][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2021.11.03-17.05.59:479][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2021.11.03-17.05.59:812][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2021.11.03-17.06.00:402][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2021.11.03-17.06.00:607][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2021.11.03-17.06.00:950][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2021.11.03-17.06.01:300][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2021.11.03-17.06.01:651][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2021.11.03-17.06.02:044][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2021.11.03-17.06.02:044][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.11.03-17.06.06:917][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: Loaded boot cache 1.26s 93MB C:/Users/logza/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/logza/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/logza/Documents/Unreal Projects/LuxorGame2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/logza/Documents/Unreal Projects/LuxorGame2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.11.03-17.06.08:180][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.11.03-17.06.08:210][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.11.03-17.06.08:254][  0]LogDerivedDataCache: Using Local data cache path C:/Users/logza/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.11.03-17.06.08:266][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2021.11.03-17.06.08:273][  0]LogSlate: Using Freetype 2.6.0
+[2021.11.03-17.06.08:293][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.11.03-17.06.08:294][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.11.03-17.06.12:630][  0]LogAssetRegistry: FAssetRegistry took 0.0293 seconds to start up
+[2021.11.03-17.06.13:032][  0]LogInit: Selected Device Profile: [Windows]
+[2021.11.03-17.06.15:556][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2021.11.03-17.06.15:908][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2021.11.03-17.06.15:908][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.11.03-17.06.15:909][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2021.11.03-17.06.15:909][  0]LogMeshReduction: No automatic mesh merging module available
+[2021.11.03-17.06.15:909][  0]LogMeshMerging: No automatic mesh merging module available
+[2021.11.03-17.06.15:925][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2021.11.03-17.06.16:913][  0]LogNetVersion: LuxorGame , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 793289054)
+[2021.11.03-17.06.17:837][  0]LogPackageLocalizationCache: Processed 6 localized package path(s) for 2 prioritized culture(s) in 0.068087 seconds
+[2021.11.03-17.06.17:842][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2021.11.03-17.06.17:842][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2021.11.03-17.06.17:842][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.11.03-17.06.18:513][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2021.11.03-17.06.41:084][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.11.03-17.06.41:378][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.11.03-17.07.10:487][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2021.11.03-17.07.13:211][  0]SourceControl: Source control is disabled
+[2021.11.03-17.07.13:211][  0]SourceControl: Source control is disabled
+[2021.11.03-17.07.13:579][  0]SourceControl: Source control is disabled
+[2021.11.03-17.07.13:941][  0]SourceControl: Source control is disabled
+[2021.11.03-17.07.18:711][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.11.03-17.07.20:578][  0]LogAnsel: Tried to load ../../../Engine/Plugins/Runtime/Nvidia/Ansel/Binaries/ThirdParty/AnselSDK64.dll : success=1
+[2021.11.03-17.07.20:963][  0]LogOcInput: OculusInput pre-init called
+[2021.11.03-17.07.22:702][  0]LogEngine: Initializing Engine...
+[2021.11.03-17.07.22:704][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.11.03-17.07.22:905][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2021.11.03-17.07.22:906][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2021.11.03-17.07.23:979][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.11.03-17.07.24:105][  0]LogInit: XAudio2 using 'VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)' : 2 channels at 48 kHz using 24 bits per sample (channel mask 0x3)
+[2021.11.03-17.07.24:128][  0]LogInit: FAudioDevice initialized.
+[2021.11.03-17.07.24:269][  0]LogDerivedDataCache: Saved boot cache 0.14s 93MB C:/Users/logza/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2021.11.03-17.07.24:277][  0]LogInit: Texture streaming: Enabled
+[2021.11.03-17.07.25:438][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.11.03-17.07.27:456][  0]LogInit: Transaction tracking system initialized
+[2021.11.03-17.07.30:198][  0]BlueprintLog: New page: Editor Load
+[2021.11.03-17.07.38:564][  0]LocalizationService: Localization service is disabled
+[2021.11.03-17.07.56:414][  0]LogConsoleResponse: Display: 
+[2021.11.03-17.07.56:912][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.11.03-17.07.56:913][  0]LogCook: Display: Mobile HDR setting 1
+[2021.11.03-17.07.56:914][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2021.11.03-17.07.57:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/logza/Documents/Unreal Projects/LuxorGame2/Content/' took 0.02s
+[2021.11.03-17.08.07:667][  0]SourceControl: Source control is disabled
+[2021.11.03-17.08.07:670][  0]Cmd: MAP LOAD FILE="../../../../../../Users/logza/Documents/Unreal Projects/LuxorGame2/Content/RenderRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.11.03-17.08.07:671][  0]LightingResults: New page: Lighting Build
+[2021.11.03-17.08.08:045][  0]MapCheck: New page: Map Check
+[2021.11.03-17.08.08:045][  0]LightingResults: New page: Lighting Build
+[2021.11.03-17.08.08:361][  0]LogSpawn: Warning: UWorld::DestroyActor: World has no context! World: RenderRoom, Actor: /Game/RenderRoom.RenderRoom:PersistentLevel.WorldSettings_0
