@@ -1,0 +1,10 @@
+Discovering modules, targets and source code for project...
+@progress 'Binding IntelliSense data...' 0%
+@progress 'Binding IntelliSense data...' 50%
+ERROR: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at UnrealBuildTool.UEBuildTarget.SetupPlugins()
+   at UnrealBuildTool.UEBuildTarget.PreBuildSetup(UEToolChain TargetToolChain, CppCompileEnvironment GlobalCompileEnvironment, LinkEnvironment GlobalLinkEnvironment)
+   at UnrealBuildTool.UEBuildTarget.Build(BuildConfiguration BuildConfiguration, CPPHeaders Headers, List`1 OutputItems, List`1 UObjectModules, ActionGraph ActionGraph)
+   at UnrealBuildTool.UnrealBuildTool.RunUBT(BuildConfiguration BuildConfiguration, String[] Arguments, FileReference ProjectFile)

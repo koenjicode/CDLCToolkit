@@ -1,0 +1,35 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Luxor Session Plugin",
+	"Description": "Luxor Session Plugin by DM-DEV1.",
+	"Category": "DM-DEV1.Plugins",
+	"CreatedBy": "Dimps Corporation",
+	"CreatedByURL": "http://www.dimps.co.jp",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "LuxorSessionUtil",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineCommSys",
+			"Enabled": true
+		}
+	]
+}

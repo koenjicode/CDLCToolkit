@@ -1,0 +1,47 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ELuxBattleMessage.generated.h"
+
+UENUM(BlueprintType)
+enum class ELuxBattleMessage : uint8 {
+    EMS_Combo,
+    EMS_BreakAttack,
+    EMS_UnBlockable,
+    EMS_ReversalEdge,
+    EMS_PunishAttack,
+    EMS_SitAttack,
+    EMS_WhileRisingAttack,
+    EMS_SimultaneousAttack,
+    EMS_8WayRunAttack,
+    EMS_ReversalEdgeCrush,
+    EMS_GuardImpactCrush,
+    EMS_AttackCounter,
+    EMS_BreakCounter,
+    EMS_RunCounter,
+    EMS_ImpactCounter,
+    EMS_LethalHit,
+    EMS_CriticalEdge,
+    EMS_SoulCharge,
+    EMS_GuardImpact,
+    EMS_ReverseImpact,
+    EMS_Revenge,
+    EMS_AdrenalineRush,
+    EMS_WallHit,
+    EMS_Stun,
+    EMS_GuardBurst,
+    EMS_Ukemi,
+    EMS_ThrowEscapeA,
+    EMS_ThrowEscapeB,
+    EMS_WeaponSkill,
+    EMS_FoodEffect,
+    EMS_TorophyBraveEdge,
+    EMS_TorophyCannon,
+    EMS_TorophyShadow,
+    EMS_SoulAttack,
+    EMS_MightyImpact,
+    EMS_AThrow,
+    EMS_BThrow,
+    EMS_UThrow,
+    ENUM_MAX UMETA(Hidden),
+};
+

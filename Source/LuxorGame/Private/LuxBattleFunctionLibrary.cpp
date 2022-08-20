@@ -1,50 +1,72 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxBattleFunctionLibrary.h"
 
+class ALuxBattlePauseController;
+class UObject;
+class ALuxBattleGameMode;
+class ALuxBattleManager;
 
-ALuxBattleGameMode* ULuxBattleFunctionLibrary::GetBattleGameMode(UObject* WorldContext)
-{
-	ALuxBattleGameMode* mode = NewObject<ALuxBattleGameMode>();
-	return mode;
+void ULuxBattleFunctionLibrary::StepInBattlePause(UObject* WorldContext) {
 }
 
-ALuxBattleManager* ULuxBattleFunctionLibrary::GetBattleManager(UObject* WorldContext)
-{
-	ALuxBattleManager* manager = NewObject<ALuxBattleManager>();
-	return manager;
+void ULuxBattleFunctionLibrary::SetUserInputCheck(UObject* WorldContext, bool bEnabled) {
 }
 
-bool ULuxBattleFunctionLibrary::BattlePauseEnabled(UObject * WorldContext)
-{
-	return false;
+void ULuxBattleFunctionLibrary::SetSoulGaugeInfinity(UObject* WorldContext, int32 inPlayerIndex, bool bInfinite) {
 }
 
-bool ULuxBattleFunctionLibrary::IsBattleOnline(UObject * WorldContext)
-{
-	return false;
+void ULuxBattleFunctionLibrary::SetImmortality(UObject* WorldContext, int32 inPlayerIndex, bool bImmortal) {
 }
 
-bool ULuxBattleFunctionLibrary::IsBattlePlaying(UObject * WorldContext)
-{
-	return false;
+void ULuxBattleFunctionLibrary::SetBattlePause(UObject* WorldContext, ELuxBattlePauseType inType, bool bPause) {
 }
 
-bool ULuxBattleFunctionLibrary::IsFinishBlow(UObject * WorldContext)
-{
-	return false;
+bool ULuxBattleFunctionLibrary::IsMatchFinished(UObject* WorldContext) {
+    return false;
 }
 
-bool ULuxBattleFunctionLibrary::IsMatchFinished(UObject * WorldContext)
-{
-	return false;
+bool ULuxBattleFunctionLibrary::IsLocalUserControl(UObject* WorldContext, int32 PlayerIndex) {
+    return false;
 }
 
-void ULuxBattleFunctionLibrary::SetImmortality(UObject * WorldContext, int32 inPlayerIndex, bool bImmortal)
-{
+bool ULuxBattleFunctionLibrary::IsFinishBlow(UObject* WorldContext) {
+    return false;
 }
 
-void ULuxBattleFunctionLibrary::SetSoulGaugeInfinity(UObject * WorldContext, int32 inPlayerIndex, bool bInfinite)
-{
+bool ULuxBattleFunctionLibrary::IsBattlePlaying(UObject* WorldContext) {
+    return false;
+}
+
+bool ULuxBattleFunctionLibrary::IsBattlePaused(UObject* WorldContext, ELuxBattlePauseType inType) {
+    return false;
+}
+
+bool ULuxBattleFunctionLibrary::IsBattleOnlineInputSync(UObject* WorldContext) {
+    return false;
+}
+
+bool ULuxBattleFunctionLibrary::IsBattleOnline(UObject* WorldContext) {
+    return false;
+}
+
+void ULuxBattleFunctionLibrary::GetBuildConfiguration(FString& Configuration) {
+}
+
+ALuxBattlePauseController* ULuxBattleFunctionLibrary::GetBattlePauseController(UObject* WorldContext) {
+    return NULL;
+}
+
+ALuxBattleManager* ULuxBattleFunctionLibrary::GetBattleManager(UObject* WorldContext) {
+    return NULL;
+}
+
+ALuxBattleGameMode* ULuxBattleFunctionLibrary::GetBattleGameMode(UObject* WorldContext) {
+    return NULL;
+}
+
+bool ULuxBattleFunctionLibrary::BattlePauseEnabled(UObject* WorldContext) {
+    return false;
+}
+
+ULuxBattleFunctionLibrary::ULuxBattleFunctionLibrary() {
 }
 

@@ -1,27 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "LuxorGame.h"
+#include "LuxCreationSupplement.h"
+#include "LuxFacialPaths.h"
 #include "LuxFacialAsset.generated.h"
 
-
-/**
- * 
- */
-UCLASS(BlueprintType, EditInlineNew)
-class LUXORGAME_API ULuxFacialAsset : public UDataAsset
-{
-
-	GENERATED_BODY()
-
+UCLASS(Blueprintable, EditInlineNew)
+class LUXORGAME_API ULuxFacialAsset : public ULuxCreationSupplement {
+    GENERATED_BODY()
 public:
-	ULuxFacialAsset();
-	~ULuxFacialAsset();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FLuxFacialPaths FacialPaths;
-
-
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxFacialPaths FacialPaths;
+    
+    ULuxFacialAsset();
 };
+

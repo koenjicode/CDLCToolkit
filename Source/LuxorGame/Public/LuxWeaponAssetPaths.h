@@ -1,42 +1,34 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "LuxorGame.h"
+#include "LuxWeaponVariation.h"
 #include "LuxAssetPathsBase.h"
+#include "LuxWeaponRawAsset.h"
+#include "LuxTraceColorApplySettingList.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
 #include "LuxWeaponAssetPaths.generated.h"
 
-
-/**
- * 
- */
-UCLASS(BlueprintType)
-class LUXORGAME_API ULuxWeaponAssetPaths : public ULuxAssetPathsBase
-{
-	GENERATED_BODY()
-
+UCLASS(Blueprintable)
+class LUXORGAME_API ULuxWeaponAssetPaths : public ULuxAssetPathsBase {
+    GENERATED_BODY()
 public:
-	ULuxWeaponAssetPaths();
-	~ULuxWeaponAssetPaths();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int CharacterType;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TArray < FLuxWeaponRawAsset > RawAssets;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TArray < FLuxWeaponVariation > Variations;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TArray < FLuxTraceColorApplySettingList > TraceColorApplySettingLists;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FStringAssetReference AppxWeaponPath;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FStringAssetReference AppxWeaponPath2;
-
-
+    UPROPERTY(AssetRegistrySearchable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 CharacterType;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxWeaponRawAsset> RawAssets;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxWeaponVariation> Variations;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxTraceColorApplySettingList> TraceColorApplySettingLists;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FStringAssetReference AppxWeaponPath;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FStringAssetReference AppxWeaponPath2;
+    
+    ULuxWeaponAssetPaths();
 };
+

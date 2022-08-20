@@ -1,7 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxRegularProfile.h"
 
-
-
+ULuxRegularProfile::ULuxRegularProfile() {
+    this->Character = ELuxCharacter::ELC_MITSURUGI;
+    this->SwingParams.AddDefaulted(2);
+}
 

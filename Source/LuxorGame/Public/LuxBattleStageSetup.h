@@ -1,38 +1,24 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "LuxLoadableBase.h"
 #include "LuxBattleStageSetup.generated.h"
 
-UCLASS()
-class LUXORGAME_API ALuxBattleStageSetup : public AActor
-{
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ALuxBattleStageSetup();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FString ExtraStageParam;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool WithHole;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool IsAstral;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int32 StageIndex;
-	
+UCLASS(Blueprintable)
+class LUXORGAME_API ULuxBattleStageSetup : public ULuxLoadableBase {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    int32 StageIndex;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool IsAstral;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool WithHole;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString ExtraStageParam;
+    
+    ULuxBattleStageSetup();
 };
+

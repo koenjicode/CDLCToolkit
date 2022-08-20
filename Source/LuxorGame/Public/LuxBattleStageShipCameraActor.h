@@ -1,46 +1,34 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "LuxorGame.h"
+#include "LuxActor.h"
+#include "LuxBattleStageShipScendParam.h"
+#include "LuxBattleStageShipScendState.h"
 #include "LuxBattleStageShipCameraActor.generated.h"
 
-
-UCLASS()
-class LUXORGAME_API ALuxBattleStageShipCameraActor : public AActor
-{
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ALuxBattleStageShipCameraActor();
-
+UCLASS(Blueprintable)
+class LUXORGAME_API ALuxBattleStageShipCameraActor : public ALuxActor {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float Range;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxBattleStageShipScendParam ScendParamX;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxBattleStageShipScendParam ScendParamZ;
+    
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool bIsFighting;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float Range;
-
-	UPROPERTY(VisibleAnywhere)
-		FLuxBattleStageShipScendState ScendStateX;
-
-	UPROPERTY(VisibleAnywhere)
-		FLuxBattleStageShipScendState ScendStateZ;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FLuxBattleStageShipScendParam ScendParamX;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FLuxBattleStageShipScendParam ScendParamZ;
-	
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bIsFighting;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxBattleStageShipScendState ScendStateX;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxBattleStageShipScendState ScendStateZ;
+    
+public:
+    ALuxBattleStageShipCameraActor();
 };
+

@@ -1,0 +1,5 @@
+#include "LuxCreationPersonalityCategorySelectWindowConfig.h"
+
+ULuxCreationPersonalityCategorySelectWindowConfig::ULuxCreationPersonalityCategorySelectWindowConfig() {
+}
+

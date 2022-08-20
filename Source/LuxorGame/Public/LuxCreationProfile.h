@@ -1,107 +1,173 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
+#include "LuxPartCategory.h"
 #include "LuxProfileBase.h"
+#include "LuxOffsetPartSetting.h"
+#include "LuxPersonalityCommentInfo.h"
+#include "LuxCreationSingleColor.h"
+#include "ELuxFightStyle.h"
+#include "ELuxRace.h"
+#include "ELuxMuscleType.h"
+#include "LuxBodyScale.h"
+#include "LuxCreationSkinColor.h"
+#include "ELuxPartSlot.h"
+#include "LuxCreationPartsColor.h"
+#include "LuxPartsSticker.h"
+#include "LuxPermanentEffectSetting.h"
+#include "LuxTraceColorPalletSetting.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
+#include "ELuxProfilePersonalityCommentType.h"
+#include "LuxSlotMeshData.h"
+#include "ELuxPartCategory.h"
 #include "LuxCreationProfile.generated.h"
 
-/**
- * 
- */
-UCLASS(BlueprintType)
-class LUXORGAME_API ULuxCreationProfile : public ULuxProfileBase
-{
-	GENERATED_BODY()
-	
+class UTexture;
+class UMaterialInterface;
+class ULuxCreationTextureAsset;
+class ULuxStickerSubscene;
+
+UCLASS(Blueprintable)
+class LUXORGAME_API ULuxCreationProfile : public ULuxProfileBase {
+    GENERATED_BODY()
 public:
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
-		FString characterName;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
-		TEnumAsByte<ELuxFightStyle> Style;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body")
-		TArray<FLuxBodyScale> BodyScales;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment")
-		TArray<FLuxPartCategory> Parts;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin|Colors")
-		FLuxCreationSkinColor SkinColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin|Colors")
-		FLuxCreationSkinColor SkinEmission;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
-		FLuxCreationSingleColor IrisColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
-		FLuxCreationSingleColor IrisEmission;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
-		FLuxCreationSingleColor ScleraColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Eye|Colors")
-		FLuxCreationSingleColor ScleraEmission;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair|Colors")
-		FLuxCreationSingleColor EyebrowColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair|Colors")
-		FLuxCreationSingleColor beardColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|Colors")
-		TArray<FLuxCreationPartsColor> PartsColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon|Colors")
-		FLuxCreationPartsColor WeaponColor;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|Extra Part")
-		TArray<FLuxOffsetPartSetting> ExtraPartsSettings;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sticker")
-		TArray <FLuxPartsSticker> Sticker;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "VFX")
-		TArray <FLuxPermanentEffectSetting> PermanentEffects;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "VFX|Colors")
-		TArray <FLuxTraceColorPalletSetting> TraceColorSettings;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
-		bool PartsBreakableLower;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
-		bool PartsBreakableMiddle;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equipment|BreakFlags")
-		bool PartsBreakableUpper;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Material that replaces all materials that have IsSkin set to 1.0.
-		TAssetPtr <UMaterialInstance> SkinReplaceMaterial;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Hair") // LuxCreationTextureAsset that replaces the eyebrow texture.
-		TAssetPtr<ULuxCreationTextureAsset> EyebrowTexture;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Body|Skin") // Folder path to custom textures. Ex: /Game/Chara/00c/Texture/
-		FString EmissionMaskPath;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Base filename shared between textures. Ex: nude_r00c
-		FString EmissionMaskBaseName;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Muscle type. Unique is used to load textures from 'UniqueTexturePath' + 'UniqueTextureBaseName'.
-		ELuxMuscleType Muscle;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Specifies if a custom skin color mask is used.
-		bool bUniqueColorMask;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Folder path to custom textures. Must use 'Unique' muscle type. Ex: /Game/Chara/00c/Texture/
-		FString UniqueTexturePath;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Body|Skin") // Base filename shared between textures. Must use 'Unique' muscle type. Ex: nude_r00c 
-		FString UniqueTextureBaseName;
-
-	
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString characterName;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    ELuxFightStyle STYLE;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    ELuxRace Race;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxBodyScale> BodyScales;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    ELuxMuscleType Muscle;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UMaterialInterface* SkinReplaceMaterial;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString UniqueTexturePath;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString UniqueTextureBaseName;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bUniqueColorMask;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString EmissionMaskPath;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FString EmissionMaskBaseName;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxPartCategory> PARTS;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSkinColor skinColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSkinColor SkinEmission;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor IrisColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor IrisEmission;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor ScleraColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor ScleraEmission;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor eyebrowColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    ULuxCreationTextureAsset* EyebrowTexture;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FLuxCreationSingleColor beardColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxCreationPartsColor> partsColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    FLuxCreationPartsColor weaponColor;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxOffsetPartSetting> ExtraPartsSettings;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
+    TArray<FLuxPartsSticker> sticker;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FLuxPermanentEffectSetting> PermanentEffects;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FLuxTraceColorPalletSetting> TraceColorSettings;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    bool bDisableCreationTex;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<UTexture*> StickerUVTextures;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<FString, UTexture*> StickerUVTexMap;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, FStringAssetReference> MuscleColorMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, FStringAssetReference> MuscleNormalMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, FStringAssetReference> MuscleSRMAMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, FStringAssetReference> MuscleMaskMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, FStringAssetReference> SkinEmissionMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TMap<ELuxProfilePersonalityCommentType, FLuxPersonalityCommentInfo> PersonalityCommentInfoMaps;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bRestrictCommentOpenFriendOnly;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool PartsBreakableUpper;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool PartsBreakableMiddle;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool PartsBreakableLower;
+    
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<FLuxSlotMeshData> slots;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<ELuxPartSlot, ELuxPartCategory> SlotMap;
+    
+private:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<ULuxStickerSubscene*> Subscenes;
+    
+public:
+    ULuxCreationProfile();
+    UFUNCTION(BlueprintCallable)
+    void SetDisableCreationTex(bool bDisable);
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool IsRenderStickerComplete() const;
+    
 };
+

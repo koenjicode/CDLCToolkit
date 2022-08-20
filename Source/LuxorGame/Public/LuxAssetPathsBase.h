@@ -1,25 +1,23 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "LuxorGame.h"
+#include "UObject/Object.h"
+#include "LuxNamedAssetReference.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
 #include "LuxAssetPathsBase.generated.h"
 
-
-/**
- * 
- */
-UCLASS(BlueprintType)
-class LUXORGAME_API ULuxAssetPathsBase : public UDataAsset
-{
-	GENERATED_BODY()
-
+UCLASS(Abstract, Blueprintable)
+class LUXORGAME_API ULuxAssetPathsBase : public UObject {
+    GENERATED_BODY()
 public:
-	ULuxAssetPathsBase();
-	~ULuxAssetPathsBase();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TArray<FLuxNamedAssetReference> NamedReferences;
-
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FLuxNamedAssetReference> NamedReferences;
+    
+    ULuxAssetPathsBase();
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    TArray<FStringAssetReference> GetUAssetPaths() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    TArray<FString> GetRAssetPaths() const;
+    
 };
+

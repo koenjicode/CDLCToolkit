@@ -1,0 +1,5 @@
+Discovering modules, targets and source code for project...
+Messages while compiling S:\UEProjects\SCVI\Intermediate\Build\BuildRules\SoulcaliburVIModuleRules.dll:
+s:\UEProjects\SCVI\Source\SoulcaliburVIEditor.Target.cs(6,3) : error CS0103: The name 'DefaultBuildSettings' does not exist in the current context
+s:\UEProjects\SCVI\Source\SoulcaliburVIEditor.Target.cs(6,26) : error CS0103: The name 'BuildSettingsVersion' does not exist in the current context
+UnrealBuildTool Exception: ERROR: UnrealBuildTool encountered an error while compiling source files

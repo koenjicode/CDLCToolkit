@@ -1,0 +1,40 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "LuxorEditor",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "DMUtility",
+			"Enabled": true
+		},
+		{
+			"Name": "DMEditorCommon",
+			"Enabled": true
+		},
+		{
+			"Name": "LuxorDeveloper",
+			"Enabled": true
+		},
+		{
+			"Name": "UMGUtil",
+			"Enabled": true
+		},
+		{
+			"Name": "UMGUtilEditor",
+			"Enabled": true
+		}
+	]
+}
