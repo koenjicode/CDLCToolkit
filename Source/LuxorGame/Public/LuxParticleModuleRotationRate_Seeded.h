@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "CoreMinimal.h"
 #include "LuxParticleModuleRotationRate.h"
 #include "Particles/ParticleModule.h"
@@ -12,5 +12,5 @@ public:
     FParticleRandomSeedInfo RandomSeedInfo;
     
     ULuxParticleModuleRotationRate_Seeded();
-};
+};*/
 

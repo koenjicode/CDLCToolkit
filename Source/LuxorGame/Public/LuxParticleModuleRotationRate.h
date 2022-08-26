@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "CoreMinimal.h"
 #include "Particles/RotationRate/ParticleModuleRotationRate.h"
 #include "LuxParticleModuleRotationRate.generated.h"
@@ -22,5 +22,5 @@ public:
     	virtual void SetToSensibleDefaults(UParticleEmitter* Owner) override;
     	//~ Begin UParticleModule Interface
     
-};
+};*/
 
