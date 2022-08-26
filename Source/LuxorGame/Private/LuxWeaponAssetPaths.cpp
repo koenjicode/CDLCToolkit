@@ -1,11 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxWeaponAssetPaths.h"
 
-ULuxWeaponAssetPaths::ULuxWeaponAssetPaths()
-{
+ULuxWeaponAssetPaths::ULuxWeaponAssetPaths() {
+    this->CharacterType = 0;
+    this->RawAssets.AddDefaulted(8);
+    this->Variations.AddDefaulted(8);
+    this->TraceColorApplySettingLists.AddDefaulted(2);
 }
 
-ULuxWeaponAssetPaths::~ULuxWeaponAssetPaths()
-{
-}

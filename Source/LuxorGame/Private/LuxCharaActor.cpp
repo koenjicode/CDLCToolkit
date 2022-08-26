@@ -1,14 +1,8 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxCharaActor.h"
+#include "Components/SkeletalMeshComponent.h"
 
-ALuxCharaActor::ALuxCharaActor()
-{
-	// Setup Components
-	PrimaryActorTick.bCanEverTick = true;
-
-	CharaMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Character Mesh"));
-	WeaponMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Weapon Mesh"));
-
+ALuxCharaActor::ALuxCharaActor() {
+    this->CharaMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharaMesh0"));
+    this->WeaponMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh0"));
 }
 

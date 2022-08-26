@@ -1,0 +1,39 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "LuxorDeveloper",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"PreBuildSteps":
+	{
+		"Win64": [
+			"echo LuxorDeveloper Start CustomPreBuildSteps",
+			"echo LuxorDeveloper End CustomPreBuildSteps"
+		]
+	},
+	"PostBuildSteps":
+	{
+		"Win64": [
+			"echo LuxorDeveloper Start CustomPostBuildSteps",
+			"$(PluginDir)\\Build\\BatchFiles\\RevWriter.bat $(EngineDir) $(ProjectDir) Config\\DefaultVersion.ini",
+			"echo LuxorDeveloper End CustomPostBuildSteps"
+		]
+	},
+	"Plugins": [
+		{
+			"Name": "DMUtility",
+			"Enabled": true
+		}
+	]
+}

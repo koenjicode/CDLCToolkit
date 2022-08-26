@@ -1,0 +1,52 @@
+{
+	"FileVersion": 3,
+	"Category": "",
+	"Description": "",
+	"EngineAssociation": "{DC5A68BD-4DE4-D21F-F353-5482C600DEBE}",
+	"Modules": [
+		{
+			"Name": "LuxorGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "ProceduralMeshComponent",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+				{
+			"Name": "UdpMessaging",
+			"Enabled": true
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		},
+		{
+			"Name": "LevelSequenceEditor",
+			"Enabled": true
+		},
+		{
+			"Name": "StereoPanorama",
+			"Enabled": false
+		},
+		{
+			"Name": "HTTPChunkInstaller",
+			"Enabled": false
+		},
+		{
+			"Name": "MfMedia",
+			"Enabled": true
+		},
+		{
+			"Name": "LinuxDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "Ansel",
+			"Enabled": true
+		}
+	]
+}

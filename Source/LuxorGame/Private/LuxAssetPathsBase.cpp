@@ -1,11 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxAssetPathsBase.h"
 
-ULuxAssetPathsBase::ULuxAssetPathsBase()
-{
+TArray<FStringAssetReference> ULuxAssetPathsBase::GetUAssetPaths() const {
+    return TArray<FStringAssetReference>();
 }
 
-ULuxAssetPathsBase::~ULuxAssetPathsBase()
-{
+TArray<FString> ULuxAssetPathsBase::GetRAssetPaths() const {
+    return TArray<FString>();
 }
+
+ULuxAssetPathsBase::ULuxAssetPathsBase() {
+}
+

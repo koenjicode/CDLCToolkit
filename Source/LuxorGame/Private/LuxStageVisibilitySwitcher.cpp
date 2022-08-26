@@ -1,30 +1,15 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "LuxStageVisibilitySwitcher.h"
+#include "Components/ArrowComponent.h"
 
-
-// Sets default values
-ALuxStageVisibilitySwitcher::ALuxStageVisibilitySwitcher()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
-	ArrowComponent = CreateDefaultSubobject<UArrowComponent>("ArrowComponent");
-
-	RootComponent = ArrowComponent;
+void ALuxStageVisibilitySwitcher::SetEnableVisibilityCheck(bool Enabled) {
 }
 
-// Called when the game starts or when spawned
-void ALuxStageVisibilitySwitcher::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void ALuxStageVisibilitySwitcher::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
+ALuxStageVisibilitySwitcher::ALuxStageVisibilitySwitcher() {
+    this->ArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrowComponent"));
+    this->VisibilityCheckType = ELuxStageVisibilityCheckType::SVC_DIRECTION;
+    this->AngleThresholdOffset = 0.00f;
+    this->BackAngleThresholdOffset = 0.50f;
+    this->DistanceThreshold = -1.00f;
+    this->EnablePositionCheck = false;
 }
 

@@ -1,19 +1,19 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "LuxorGame.h"
+#include "UObject/Object.h"
 #include "LuxLoadableBase.generated.h"
 
-/**
- * 
- */
-UCLASS(BlueprintType, Blueprintable)
-class LUXORGAME_API ULuxLoadableBase : public UObject
-{
-	GENERATED_BODY()
+class ULuxAsyncLoader;
+
+UCLASS(Abstract, Blueprintable)
+class LUXORGAME_API ULuxLoadableBase : public UObject {
+    GENERATED_BODY()
 public:
-	ULuxLoadableBase();
-	~ULuxLoadableBase();
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<ULuxAsyncLoader*> Loaders;
+    
+public:
+    ULuxLoadableBase();
 };
+
