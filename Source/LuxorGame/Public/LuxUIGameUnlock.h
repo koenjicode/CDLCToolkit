@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UIObject.h"
+
 #include "LuxUIGameUnlock.generated.h"
 
 class ULuxUIGameUnlock;

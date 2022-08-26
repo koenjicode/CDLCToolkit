@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "PixelFormat.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "LuxUITextureParam.generated.h"
@@ -20,6 +21,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FColor> Pixels;
     
-    LUXORGAME_API FLuxUITextureParam();
+    LUXORGAME_API FLuxUITextureParam(); 
 };
 

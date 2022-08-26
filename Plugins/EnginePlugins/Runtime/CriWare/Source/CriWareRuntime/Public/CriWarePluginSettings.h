@@ -3,7 +3,7 @@
 #include "UObject/Object.h"
 #include "CriWarePluginSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, Config = Engine)
 class CRIWARERUNTIME_API UCriWarePluginSettings : public UObject {
     GENERATED_BODY()
 public:

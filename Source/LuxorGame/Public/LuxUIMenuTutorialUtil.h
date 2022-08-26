@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UIMenuWidget.h"
+#include "UIWindowElement.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "LuxUIMenuTutorialUtil.generated.h"
 
-class UUIWindowElement;
-class UUIMenuWidget;
 
 UCLASS(Blueprintable)
 class LUXORGAME_API ULuxUIMenuTutorialUtil : public UBlueprintFunctionLibrary {

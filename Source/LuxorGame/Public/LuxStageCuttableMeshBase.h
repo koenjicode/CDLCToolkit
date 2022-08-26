@@ -1,14 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "LuxStageActorBase.h"
+/*#include "ProceduralMeshComponent.h"*/
 #include "Engine/EngineTypes.h"
 #include "LuxStageCuttableMeshBase.generated.h"
 
+class UProceduralMeshComponent;
 class UMaterialInstanceDynamic;
 class UParticleSystem;
 class UStaticMeshComponent;
 class UAtomComponent;
-class UProceduralMeshComponent;
+
 class UMaterialInterface;
 class UPrimitiveComponent;
 class AActor;
@@ -20,8 +22,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* MeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
-    UProceduralMeshComponent* ProceduralMeshComponent;
+    /*UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UProceduralMeshComponent* ProceduralMeshComponent;*/
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     UAtomComponent* SliceSEComponent;

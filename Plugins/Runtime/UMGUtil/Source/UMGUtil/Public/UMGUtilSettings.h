@@ -3,7 +3,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringClassReference -FallbackName=StringClassReference
+#include "StringClassReference.h"
 #include "UIGameFlowSettings.h"
+#include "Engine/DeveloperSettings.h"
 #include "UMGUtilSettings.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=Game)

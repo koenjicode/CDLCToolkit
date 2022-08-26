@@ -8,7 +8,7 @@ UCLASS(Blueprintable, EditInlineNew)
 class ULuxParticleModuleLocationPrimitiveSphere_Seeded : public ULuxParticleModuleLocationPrimitiveSphere {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     FParticleRandomSeedInfo RandomSeedInfo;
     
     ULuxParticleModuleLocationPrimitiveSphere_Seeded();

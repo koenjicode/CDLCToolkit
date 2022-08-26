@@ -16,7 +16,7 @@ protected:
     ALuxStageSkeletalMeshActor* Owner;
     
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRootMotionMovementParams RootMotionParams;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

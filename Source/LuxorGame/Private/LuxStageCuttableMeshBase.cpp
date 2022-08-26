@@ -1,6 +1,5 @@
 #include "LuxStageCuttableMeshBase.h"
 #include "AtomComponent.h"
-#include "ProceduralMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
 
 class UPrimitiveComponent;
@@ -14,7 +13,7 @@ void ALuxStageCuttableMeshBase::Initialize() {
 
 ALuxStageCuttableMeshBase::ALuxStageCuttableMeshBase() {
     this->MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("InitialStaticMesh"));
-    this->ProceduralMeshComponent = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("CuttableProceduralMesh"));
+    /*this->ProceduralMeshComponent = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("CuttableProceduralMesh"));*/
     this->SliceSEComponent = CreateDefaultSubobject<UAtomComponent>(TEXT("SliceSE"));
     this->SliceParticle = NULL;
     this->SliceLeafParticle = NULL;

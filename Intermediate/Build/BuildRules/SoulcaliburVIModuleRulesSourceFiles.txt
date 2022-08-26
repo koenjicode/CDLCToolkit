@@ -1,4 +1,5 @@
 S:\Github Projects\CDLCToolkit\Source\LuxorGame\LuxorGame.Build.cs
+S:\Github Projects\CDLCToolkit\Source\OnlineSubsystemSteam\OnlineSubsystemSteam.Build.cs
 S:\Github Projects\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMDInputCore\DMDInputCore.Build.cs
 S:\Github Projects\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMUtility\DMUtility.Build.cs
 S:\Github Projects\CDLCToolkit\Plugins\EnginePlugins\Runtime\CriWare\Source\CriWareRuntime\CriWareRuntime.Build.cs

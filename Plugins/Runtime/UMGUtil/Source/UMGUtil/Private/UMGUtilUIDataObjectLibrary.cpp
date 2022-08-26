@@ -243,7 +243,7 @@ bool UUMGUtilUIDataObjectLibrary::Conv_UIDataObjectToBoolean(const FUIDataObject
     return false;
 }
 
-FUIDataObject UUMGUtilUIDataObjectLibrary::Conv_TAssetPtrToUIDataObject(const UObject*& InAsset) {
+FUIDataObject UUMGUtilUIDataObjectLibrary::Conv_TAssetPtrToUIDataObject(const TAssetPtr<UObject>& InAsset) {
     return FUIDataObject{};
 }
 

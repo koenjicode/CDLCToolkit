@@ -208,7 +208,7 @@ public:
     static bool Conv_UIDataObjectToBoolean(const FUIDataObject& InDataObject);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    static FUIDataObject Conv_TAssetPtrToUIDataObject(const UObject*& InAsset);
+    static FUIDataObject Conv_TAssetPtrToUIDataObject(const TAssetPtr<UObject>& InAsset);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FUIDataObject Conv_StringToUIDataObject(const FString& inString);
