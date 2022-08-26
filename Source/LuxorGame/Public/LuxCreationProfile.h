@@ -15,7 +15,6 @@
 #include "LuxPartsSticker.h"
 #include "LuxPermanentEffectSetting.h"
 #include "LuxTraceColorPalletSetting.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
 #include "ELuxProfilePersonalityCommentType.h"
 #include "LuxSlotMeshData.h"
 #include "ELuxPartCategory.h"
@@ -46,7 +45,7 @@ public:
     ELuxMuscleType Muscle;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UMaterialInterface* SkinReplaceMaterial;
+    TAssetPtr <UMaterialInterface> SkinReplaceMaterial;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString UniqueTexturePath;
@@ -88,7 +87,7 @@ public:
     FLuxCreationSingleColor eyebrowColor;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* EyebrowTexture;
+    TAssetPtr <ULuxCreationTextureAsset> EyebrowTexture;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLuxCreationSingleColor beardColor;

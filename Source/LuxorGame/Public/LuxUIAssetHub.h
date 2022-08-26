@@ -22,16 +22,16 @@ public:
     ULuxUIAssetLoader* RequestLoadByUIAssetPaths(ULuxUIAssetPaths* InUIAssetPaths);
     
     UFUNCTION(BlueprintCallable)
-    ULuxUIAssetLoader* RequestLoadByUClassPtrs(FName InIdentifier, TArray<UClass*> InUClassPtrs);
+    ULuxUIAssetLoader* RequestLoadByUClassPtrs(FName InIdentifier, TArray<TAssetSubclassOf<UObject>> InUClassPtrs);
     
     UFUNCTION(BlueprintCallable)
-    ULuxUIAssetLoader* RequestLoadByUClassPtr(FName InIdentifier, UClass* InUClassPtr);
+    ULuxUIAssetLoader* RequestLoadByUClassPtr(FName InIdentifier, TAssetSubclassOf<UObject> InUClassPtr);
     
     UFUNCTION(BlueprintCallable)
-    ULuxUIAssetLoader* RequestLoadByUAssetPtrs(FName InIdentifier, TArray<UObject*> InUAssetPtrs);
+    ULuxUIAssetLoader* RequestLoadByUAssetPtrs(FName InIdentifier, TArray<TAssetPtr<UObject>> InUAssetPtrs);
     
     UFUNCTION(BlueprintCallable)
-    ULuxUIAssetLoader* RequestLoadByUAssetPtr(FName InIdentifier, UObject* InUAssetPtr);
+    ULuxUIAssetLoader* RequestLoadByUAssetPtr(FName InIdentifier, TAssetPtr<UObject> InUAssetPtr);
     
     UFUNCTION(BlueprintCallable)
     ULuxUIAssetLoader* RequestLoadByUAssetPaths(FName InIdentifier, TArray<FString> InUAssetPaths);

@@ -21,7 +21,7 @@ public:
     TSubclassOf<UBaseUserWidget> WidgetClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxStoryDemoResourceDataAsset* DemoResource;
+    TAssetPtr<ULuxStoryDemoResourceDataAsset> DemoResource;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ULuxUIAssetPaths* DataAssetPath;

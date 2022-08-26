@@ -1,8 +1,8 @@
 {
 	"FileVersion": 3,
+	"EngineAssociation": "{DC5A68BD-4DE4-D21F-F353-5482C600DEBE}",
 	"Category": "",
 	"Description": "",
-	"EngineAssociation": "{DC5A68BD-4DE4-D21F-F353-5482C600DEBE}",
 	"Modules": [
 		{
 			"Name": "LuxorGame",
@@ -16,7 +16,7 @@
 		}
 	],
 	"Plugins": [
-				{
+		{
 			"Name": "UdpMessaging",
 			"Enabled": true
 		},

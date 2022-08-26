@@ -10,7 +10,7 @@ public:
     FName Identifier;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UClass* Reference;
+    TAssetSubclassOf<UObject> Reference;
     
     LUXORGAME_API FLuxUIStringClassReference();
 };
