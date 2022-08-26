@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxWeaponVariation.h"
 #include "LuxProfileDBWeaponData.generated.h"
 
@@ -21,7 +21,7 @@ public:
     FString locNameTextId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     LUXORGAME_API FLuxProfileDBWeaponData();
 };

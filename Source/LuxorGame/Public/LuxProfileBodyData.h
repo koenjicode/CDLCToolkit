@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "LuxProfileBodyVoiceSettingData.h"
+#include "LuxProfileSinglePartData.h"
 #include "LuxProfileDataSerializable.h"
 #include "ELuxRace.h"
 #include "ELuxGender.h"
 #include "LuxProfileBodyPhysicalData.h"
-#include "LuxProfileSinglePartData.h"
 #include "LuxProfileBodyData.generated.h"
 
 class ULuxCreationTextureAsset;
@@ -30,7 +30,7 @@ public:
     FLuxProfileSinglePartData hair;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* eyebrow;
+    TAssetPtr<ULuxCreationTextureAsset> eyebrow;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLuxProfileBodyVoiceSettingData voiceSetting;

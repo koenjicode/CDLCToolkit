@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxPartCategory.h"
 #include "ELuxProfileDatabaseTableId.h"
 #include "ELuxPartSlot.h"
@@ -16,7 +16,7 @@ public:
     ELuxPartCategory Category;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locDescriptionTextId;

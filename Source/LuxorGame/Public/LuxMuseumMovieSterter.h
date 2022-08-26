@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FileMediaSource.h"
-#include "LuxStoryDemoResourceDataAsset.h"
-#include "UObject/Interface.h"
+#include "Interface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Interface -FallbackName=Interface
 #include "LuxMuseumMovieSterter.generated.h"
 
-
+class UFileMediaSource;
+class ULuxStoryDemoResourceDataAsset;
 
 UINTERFACE(Blueprintable)
 class ULuxMuseumMovieSterter : public UInterface {
@@ -15,8 +15,8 @@ class ULuxMuseumMovieSterter : public UInterface {
 class ILuxMuseumMovieSterter : public IInterface {
     GENERATED_BODY()
 public:
-    /*UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void StartMovie(const TAssetPtr<UFileMediaSource>& movieResource, const ULuxStoryDemoResourceDataAsset*& DemoResource);*/
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+    void StartMovie(const TAssetPtr<UFileMediaSource>& movieResource, const TAssetPtr<ULuxStoryDemoResourceDataAsset>& DemoResource);
     
 };
 

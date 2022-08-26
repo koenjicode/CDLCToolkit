@@ -26,11 +26,11 @@ TArray<ELuxGender> ULuxProfileDatabase::getRacialGenderTypes(ELuxRace racialType
     return TArray<ELuxGender>();
 }
 
-ULuxCreationProfile* ULuxProfileDatabase::findRegularProfileFrom(ELuxFightStyle STYLE, ELuxModelColorType Color) const {
+TAssetPtr<ULuxCreationProfile> ULuxProfileDatabase::findRegularProfileFrom(ELuxFightStyle STYLE, ELuxModelColorType Color) const {
     return NULL;
 }
 
-ULuxCreationProfile* ULuxProfileDatabase::findProfileFrom(ELuxRace racialType, ELuxGender genderType) const {
+TAssetPtr<ULuxCreationProfile> ULuxProfileDatabase::findProfileFrom(ELuxRace racialType, ELuxGender genderType) const {
     return NULL;
 }
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "Engine/DataTable.h"
-#include "ELuxStoryDemoType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TableRowBase -FallbackName=TableRowBase
 #include "ELuxStoryDemoFadeType.h"
+#include "ELuxStoryDemoType.h"
+#include "LuxBattleMoveCategoryTableRow.h"
 #include "LuxStoryDemoSetting.generated.h"
 
 class UBaseUserWidget;
@@ -18,7 +18,7 @@ public:
     ELuxStoryDemoType DemoType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TSubclassOf<UBaseUserWidget> WidgetClass;
+    TAssetSubclassOf<UBaseUserWidget> WidgetClass;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TAssetPtr<ULuxStoryDemoResourceDataAsset> DemoResource;

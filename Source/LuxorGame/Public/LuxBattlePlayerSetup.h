@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LuxBattleDNA.h"
 #include "LuxLoadableBase.h"
-#include "ELuxWeaponVariation.h"
 #include "ELuxVoiceLanguage.h"
+#include "ELuxWeaponVariation.h"
+#include "LuxBattleDNA.h"
 #include "ELuxFightStyle.h"
 #include "ELuxSoulChargeType.h"
 #include "LuxBattlePlayerSetup.generated.h"
 
-class ULuxAssetPathsBase;
-class ULuxWeaponAssetPaths;
 class ULuxProfileBase;
-class ULuxBattlePlayerSetup;
-class ULuxCharacterAssetPaths;
 class ULuxVoiceAssetPaths;
-class ULuxAsyncLoader;
+class ULuxCharacterAssetPaths;
 class ULuxCreationProfile;
+class ULuxWeaponAssetPaths;
+class ULuxAssetPathsBase;
+class ULuxAsyncLoader;
+class ULuxBattlePlayerSetup;
 
 UCLASS(Blueprintable, Config=Game)
 class LUXORGAME_API ULuxBattlePlayerSetup : public ULuxLoadableBase {
@@ -46,13 +46,13 @@ public:
     FLuxBattleDNA BattleDNA;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCharacterAssetPaths* OverrideCharacterPaths;
+    TAssetPtr<ULuxCharacterAssetPaths> OverrideCharacterPaths;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxWeaponAssetPaths* OverrideWeaponPaths;
+    TAssetPtr<ULuxWeaponAssetPaths> OverrideWeaponPaths;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxVoiceAssetPaths* OverrideVoicePaths;
+    TAssetPtr<ULuxVoiceAssetPaths> OverrideVoicePaths;
     
 protected:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

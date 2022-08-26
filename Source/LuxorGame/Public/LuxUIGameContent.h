@@ -1,20 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataObject -FallbackName=UIDataObject
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIObject -FallbackName=UIObject
 #include "LuxUIGameUnlockData.h"
-#include "UIObject.h"
 #include "LuxUIGameContentCategoryData.h"
-#include "UIDataObject.h"
 #include "ELuxFightStyle.h"
 #include "LuxProfileData.h"
+#include "UIDataObject.h"
+#include "UIObject.h"
 #include "LuxUIGameContent.generated.h"
 
-class ULuxUIGameUnlock;
 class ULuxUIGameUnlockShinEdgeMaster;
+class ULuxUIGameUnlock;
 class ULuxUIGameUnlockChronicleStory;
 class UTexture2D;
+class UMaterialInstanceDynamic;
 class ULuxCreationProfile;
 class ULuxUIGameContent;
-class UMaterialInstanceDynamic;
 
 UCLASS(Blueprintable)
 class LUXORGAME_API ULuxUIGameContent : public UUIObject {
@@ -123,7 +125,7 @@ public:
     UTexture2D* GetWeaponIconByFightStyle(const ELuxFightStyle& InFightStyle) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetWeaponIconAssetPathByFightStyle(const ELuxFightStyle& InFightStyle) const;
+    TAssetPtr<UTexture2D> GetWeaponIconAssetPathByFightStyle(const ELuxFightStyle& InFightStyle) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<int32> GetUniqueCharaIDs() const;
@@ -138,7 +140,7 @@ public:
     TArray<UTexture2D*> GetStyleIconByFightStyle(int32 side, const ELuxFightStyle& InFightStyle);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    TArray<UTexture2D*> GetStyleIconAssetPathByFightStyle(int32 side, const ELuxFightStyle& InFightStyle) const;
+    TArray<TAssetPtr<UTexture2D>> GetStyleIconAssetPathByFightStyle(int32 side, const ELuxFightStyle& InFightStyle) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FString GetStagePathByStageCode(const FString& InStageCode) const;
@@ -156,7 +158,7 @@ public:
     UTexture2D* GetStageIconByStageCode(const FString& InStageCode) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetStageIconAssetPathByStageCode(const FString& InStageCode) const;
+    TAssetPtr<UTexture2D> GetStageIconAssetPathByStageCode(const FString& InStageCode) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<FString> GetStageCodesIfAvailable(const TArray<FString>& InStageCodes) const;
@@ -186,10 +188,10 @@ public:
     bool GetProfileDataByCharaCode(const FString& inCharaCode, int32 inIndex, FLuxProfileData& ProfileData) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetItemIconAssetPathByItemType(const FString& InItemType) const;
+    TAssetPtr<UTexture2D> GetItemIconAssetPathByItemType(const FString& InItemType) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetImageByAssetPath(UTexture2D* ImagePath) const;
+    UTexture2D* GetImageByAssetPath(TAssetPtr<UTexture2D> ImagePath) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static ULuxUIGameContent* GetGlobalInstance();
@@ -267,7 +269,7 @@ public:
     UTexture2D* GetCharaImageByCharaCode(const FString& inCharaCode, int32 inIndex) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetCharaImageAssetPathByCharaCode(const FString& inCharaCode, int32 inIndex) const;
+    TAssetPtr<UTexture2D> GetCharaImageAssetPathByCharaCode(const FString& inCharaCode, int32 inIndex) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<FString> GetCharaCodesIfAvailable(const TArray<FString>& InCharaCodes) const;
@@ -309,7 +311,7 @@ public:
     FString GetAuthorNameByCharaCode(const FString& inCharaCode, int32 inIndex) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    UTexture2D* GetAssistorImageAssetPath() const;
+    TAssetPtr<UTexture2D> GetAssistorImageAssetPath() const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UTexture2D* GetAssistorImage() const;

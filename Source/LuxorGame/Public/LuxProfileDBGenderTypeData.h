@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxGender.h"
 #include "LuxProfileDBGenderTypeData.generated.h"
 
@@ -14,7 +14,7 @@ public:
     ELuxGender genderType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;

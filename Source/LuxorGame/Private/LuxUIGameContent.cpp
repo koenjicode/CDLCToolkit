@@ -1,9 +1,9 @@
 #include "LuxUIGameContent.h"
 
+class UMaterialInstanceDynamic;
+class ULuxUIGameContent;
 class ULuxCreationProfile;
 class UTexture2D;
-class ULuxUIGameContent;
-class UMaterialInstanceDynamic;
 
 void ULuxUIGameContent::UpdateLocalDLC(const FString& InCheckDLC) {
 }
@@ -104,7 +104,7 @@ UTexture2D* ULuxUIGameContent::GetWeaponIconByFightStyle(const ELuxFightStyle& I
     return NULL;
 }
 
-UTexture2D* ULuxUIGameContent::GetWeaponIconAssetPathByFightStyle(const ELuxFightStyle& InFightStyle) const {
+TAssetPtr<UTexture2D> ULuxUIGameContent::GetWeaponIconAssetPathByFightStyle(const ELuxFightStyle& InFightStyle) const {
     return NULL;
 }
 
@@ -124,8 +124,8 @@ TArray<UTexture2D*> ULuxUIGameContent::GetStyleIconByFightStyle(int32 side, cons
     return TArray<UTexture2D*>();
 }
 
-TArray<UTexture2D*> ULuxUIGameContent::GetStyleIconAssetPathByFightStyle(int32 side, const ELuxFightStyle& InFightStyle) const {
-    return TArray<UTexture2D*>();
+TArray<TAssetPtr<UTexture2D>> ULuxUIGameContent::GetStyleIconAssetPathByFightStyle(int32 side, const ELuxFightStyle& InFightStyle) const {
+    return TArray<TAssetPtr<UTexture2D>>();
 }
 
 FString ULuxUIGameContent::GetStagePathByStageCode(const FString& InStageCode) const {
@@ -148,7 +148,7 @@ UTexture2D* ULuxUIGameContent::GetStageIconByStageCode(const FString& InStageCod
     return NULL;
 }
 
-UTexture2D* ULuxUIGameContent::GetStageIconAssetPathByStageCode(const FString& InStageCode) const {
+TAssetPtr<UTexture2D> ULuxUIGameContent::GetStageIconAssetPathByStageCode(const FString& InStageCode) const {
     return NULL;
 }
 
@@ -187,11 +187,11 @@ bool ULuxUIGameContent::GetProfileDataByCharaCode(const FString& inCharaCode, in
     return false;
 }
 
-UTexture2D* ULuxUIGameContent::GetItemIconAssetPathByItemType(const FString& InItemType) const {
+TAssetPtr<UTexture2D> ULuxUIGameContent::GetItemIconAssetPathByItemType(const FString& InItemType) const {
     return NULL;
 }
 
-UTexture2D* ULuxUIGameContent::GetImageByAssetPath(UTexture2D* ImagePath) const {
+UTexture2D* ULuxUIGameContent::GetImageByAssetPath(TAssetPtr<UTexture2D> ImagePath) const {
     return NULL;
 }
 
@@ -295,7 +295,7 @@ UTexture2D* ULuxUIGameContent::GetCharaImageByCharaCode(const FString& inCharaCo
     return NULL;
 }
 
-UTexture2D* ULuxUIGameContent::GetCharaImageAssetPathByCharaCode(const FString& inCharaCode, int32 inIndex) const {
+TAssetPtr<UTexture2D> ULuxUIGameContent::GetCharaImageAssetPathByCharaCode(const FString& inCharaCode, int32 inIndex) const {
     return NULL;
 }
 
@@ -351,7 +351,7 @@ FString ULuxUIGameContent::GetAuthorNameByCharaCode(const FString& inCharaCode, 
     return TEXT("");
 }
 
-UTexture2D* ULuxUIGameContent::GetAssistorImageAssetPath() const {
+TAssetPtr<UTexture2D> ULuxUIGameContent::GetAssistorImageAssetPath() const {
     return NULL;
 }
 

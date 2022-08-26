@@ -1,21 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "ELuxUIPlayerSoulCondition.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataObject -FallbackName=UIDataObject
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "ELuxWeaponVariation.h"
-#include "ELuxShinEdgeMasterMissionSkillType.h"
-#include "UIDataObject.h"
-#include "PreviewHumanTraceData.h"
 #include "LuxUIGameItemData.h"
+#include "PreviewHumanTraceData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+#include "ELuxShinEdgeMasterMissionSkillType.h"
 #include "LuxShinEdgeMasterAssistChara.h"
-#include "UObject/NoExportTypes.h"
 #include "ELuxUIArcadeBattleDifficulty.h"
+#include "ELuxUIPlayerSoulCondition.h"
 #include "ELuxFightStyle.h"
 #include "ELuxUIDataObjectExec.h"
 #include "ELuxUIPlayerSoulLevel.h"
 #include "ELuxUIWeaponSkillType.h"
 #include "LuxUIGameWeaponData.h"
-#include "UObject/NoExportTypes.h"
+#include "UIDataObject.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "LuxUIDataObjectUtil.generated.h"
 
 class UTexture2D;
@@ -410,7 +412,7 @@ public:
     static void FLuxUIGameWeaponDataToFUIDataObject(const FLuxUIGameWeaponData& inWeapon, FUIDataObject& WEAPON);
     
     UFUNCTION(BlueprintCallable)
-    static FUIDataObject CreateResultObject(const FString& inName, const FString& inType, const int32 InCount, UTexture2D* InIconPath, const FUIDataObject& InObjData);
+    static FUIDataObject CreateResultObject(const FString& inName, const FString& inType, const int32 InCount, TAssetPtr<UTexture2D> InIconPath, const FUIDataObject& InObjData);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FUIDataObject CreateInvalidDecideSEItemData(const FUIDataObject& Data, bool player_menu);
@@ -497,7 +499,7 @@ public:
     static void BreakShinEdgeMasterAssistor(const FUIDataObject& InSemAssistor, FString& CharaCode, int32& CharaLevel, FString& CharaName, FUIDataObject& WeaponSetting, ELuxUIDataObjectExec& Exec);
     
     UFUNCTION(BlueprintCallable)
-    static void BreakResultObject(const FUIDataObject& InResultData, FString& OutName, FString& OutType, int32& OutCount, UTexture2D*& OutIconPath, FUIDataObject& OutObjData, ELuxUIDataObjectExec& Exec);
+    static void BreakResultObject(const FUIDataObject& InResultData, FString& OutName, FString& OutType, int32& OutCount, TAssetPtr<UTexture2D>& OutIconPath, FUIDataObject& OutObjData, ELuxUIDataObjectExec& Exec);
     
 };
 

@@ -477,7 +477,7 @@ void ULuxUIDataObjectUtil::FUIDataObjectToFLuxUIGameWeaponData(const FUIDataObje
 void ULuxUIDataObjectUtil::FLuxUIGameWeaponDataToFUIDataObject(const FLuxUIGameWeaponData& inWeapon, FUIDataObject& WEAPON) {
 }
 
-FUIDataObject ULuxUIDataObjectUtil::CreateResultObject(const FString& inName, const FString& inType, const int32 InCount, UTexture2D* InIconPath, const FUIDataObject& InObjData) {
+FUIDataObject ULuxUIDataObjectUtil::CreateResultObject(const FString& inName, const FString& inType, const int32 InCount, TAssetPtr<UTexture2D> InIconPath, const FUIDataObject& InObjData) {
     return FUIDataObject{};
 }
 
@@ -566,7 +566,7 @@ void ULuxUIDataObjectUtil::BreakShinEdgeMasterBattleSetting(const FUIDataObject&
 void ULuxUIDataObjectUtil::BreakShinEdgeMasterAssistor(const FUIDataObject& InSemAssistor, FString& CharaCode, int32& CharaLevel, FString& CharaName, FUIDataObject& WeaponSetting, ELuxUIDataObjectExec& Exec) {
 }
 
-void ULuxUIDataObjectUtil::BreakResultObject(const FUIDataObject& InResultData, FString& OutName, FString& OutType, int32& OutCount, UTexture2D*& OutIconPath, FUIDataObject& OutObjData, ELuxUIDataObjectExec& Exec) {
+void ULuxUIDataObjectUtil::BreakResultObject(const FUIDataObject& InResultData, FString& OutName, FString& OutType, int32& OutCount, TAssetPtr<UTexture2D>& OutIconPath, FUIDataObject& OutObjData, ELuxUIDataObjectExec& Exec) {
 }
 
 ULuxUIDataObjectUtil::ULuxUIDataObjectUtil() {

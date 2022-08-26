@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "LuxProfileDBHitEffectData.generated.h"
 
 class UTexture;
@@ -16,7 +16,7 @@ public:
     FString locNameTextId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString dlcId;

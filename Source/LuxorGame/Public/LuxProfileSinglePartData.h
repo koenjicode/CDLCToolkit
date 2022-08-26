@@ -10,7 +10,7 @@ struct FLuxProfileSinglePartData : public FLuxProfileDataSerializable {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationPartBase* part;
+    TAssetPtr<ULuxCreationPartBase> part;
     
     LUXORGAME_API FLuxProfileSinglePartData();
 };

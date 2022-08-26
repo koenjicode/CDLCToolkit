@@ -8,19 +8,19 @@ ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUIAssetPaths(ULuxUIAssetPaths* I
     return NULL;
 }
 
-ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUClassPtrs(FName InIdentifier, TArray<UClass*> InUClassPtrs) {
+ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUClassPtrs(FName InIdentifier, TArray<TAssetSubclassOf<UObject>> InUClassPtrs) {
     return NULL;
 }
 
-ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUClassPtr(FName InIdentifier, UClass* InUClassPtr) {
+ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUClassPtr(FName InIdentifier, TAssetSubclassOf<UObject> InUClassPtr) {
     return NULL;
 }
 
-ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUAssetPtrs(FName InIdentifier, TArray<UObject*> InUAssetPtrs) {
+ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUAssetPtrs(FName InIdentifier, TArray<TAssetPtr<UObject>> InUAssetPtrs) {
     return NULL;
 }
 
-ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUAssetPtr(FName InIdentifier, UObject* InUAssetPtr) {
+ULuxUIAssetLoader* ULuxUIAssetHub::RequestLoadByUAssetPtr(FName InIdentifier, TAssetPtr<UObject> InUAssetPtr) {
     return NULL;
 }
 

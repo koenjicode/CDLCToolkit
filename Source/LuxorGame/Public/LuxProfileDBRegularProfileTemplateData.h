@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxModelColorType.h"
 #include "LuxProfileDBRegularProfileTemplateData.generated.h"
 
@@ -12,7 +12,7 @@ struct FLuxProfileDBRegularProfileTemplateData : public FUIDataStructInterface {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationProfile* Profile;
+    TAssetPtr<ULuxCreationProfile> Profile;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ELuxModelColorType Color;

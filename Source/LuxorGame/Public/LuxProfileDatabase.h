@@ -1,13 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELuxFightStyle.h"
-#include "ELuxProfileDatabaseTableId.h"
-#include "Engine/DataAsset.h"
-#include "ELuxGender.h"
 #include "ELuxRace.h"
-#include "UIDataObject.h"
+#include "ELuxProfileDatabaseTableId.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "ELuxFightStyle.h"
 #include "ELuxWeaponVariation.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataObject -FallbackName=UIDataObject
+#include "ELuxGender.h"
 #include "ELuxModelColorType.h"
+#include "UIDataObject.h"
+#include "Engine/DataAsset.h"
 #include "LuxProfileDatabase.generated.h"
 
 class UDataTable;
@@ -40,10 +42,10 @@ public:
     TArray<ELuxGender> getRacialGenderTypes(ELuxRace racialType) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    ULuxCreationProfile* findRegularProfileFrom(ELuxFightStyle STYLE, ELuxModelColorType Color) const;
+    TAssetPtr<ULuxCreationProfile> findRegularProfileFrom(ELuxFightStyle STYLE, ELuxModelColorType Color) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    ULuxCreationProfile* findProfileFrom(ELuxRace racialType, ELuxGender genderType) const;
+    TAssetPtr<ULuxCreationProfile> findProfileFrom(ELuxRace racialType, ELuxGender genderType) const;
     
 };
 

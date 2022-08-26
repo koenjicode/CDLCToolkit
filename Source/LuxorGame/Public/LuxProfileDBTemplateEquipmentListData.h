@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELuxCreationModelType.h"
-#include "UIDataStructInterface.h"
-#include "ELuxGender.h"
-#include "ELuxRace.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
+#include "ELuxGender.h"
+#include "ELuxCreationModelType.h"
+#include "ELuxRace.h"
 #include "LuxProfileDBTemplateEquipmentListData.generated.h"
 
 class ULuxCreationProfile;
@@ -29,7 +29,7 @@ public:
     FString locLabelTextId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationProfile* Profile;
+    TAssetPtr<ULuxCreationProfile> Profile;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<ELuxFightStyle> relatedUnlockStyle;

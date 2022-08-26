@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELuxCreationModelType.h"
-#include "UIDataStructInterface.h"
-#include "ELuxGender.h"
-#include "ELuxPartCategory.h"
-#include "ELuxRace.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
+#include "ELuxPartCategory.h"
+#include "ELuxGender.h"
+#include "ELuxRace.h"
+#include "ELuxCreationModelType.h"
 #include "LuxProfileDBPartsData.generated.h"
 
-class UTexture;
 class ULuxCreationPartBase;
+class UTexture;
 
 USTRUCT(BlueprintType)
 struct FLuxProfileDBPartsData : public FUIDataStructInterface {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationPartBase* Asset;
+    TAssetPtr<ULuxCreationPartBase> Asset;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ELuxPartCategory Category;

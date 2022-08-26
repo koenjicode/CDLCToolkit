@@ -1,14 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIObject.h"
-#include "ELuxProfileDataContainerType.h"
-#include "ELuxFightStyle.h"
-#include "LuxPersonalityCommentInfo.h"
-#include "ELuxProfilePersonalityCommentType.h"
-#include "LuxProfileData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataObject -FallbackName=UIDataObject
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIObject -FallbackName=UIObject
 #include "ELuxProfileFactoryProjectSearchMenu.h"
-#include "UIDataObject.h"
+#include "ELuxProfileDataContainerType.h"
+#include "LuxPersonalityCommentInfo.h"
+#include "LuxProfileData.h"
+#include "ELuxFightStyle.h"
+#include "ELuxProfilePersonalityCommentType.h"
 #include "ELuxModelColorType.h"
+#include "UIDataObject.h"
+#include "UIObject.h"
 #include "LuxProfileFactory.generated.h"
 
 class ULuxCreationProfile;
@@ -73,7 +75,7 @@ public:
     bool isWorking() const;
     
     UFUNCTION(BlueprintCallable)
-    void importFromProfileAsset(ULuxCreationProfile* baseProductAsset);
+    void importFromProfileAsset(TAssetPtr<ULuxCreationProfile> baseProductAsset);
     
     UFUNCTION(BlueprintCallable)
     void importFromProfile(ULuxCreationProfile* baseProduct);

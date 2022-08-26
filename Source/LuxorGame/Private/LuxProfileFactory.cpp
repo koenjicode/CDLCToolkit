@@ -49,7 +49,7 @@ bool ULuxProfileFactory::isWorking() const {
     return false;
 }
 
-void ULuxProfileFactory::importFromProfileAsset(ULuxCreationProfile* baseProductAsset) {
+void ULuxProfileFactory::importFromProfileAsset(TAssetPtr<ULuxCreationProfile> baseProductAsset) {
 }
 
 void ULuxProfileFactory::importFromProfile(ULuxCreationProfile* baseProduct) {

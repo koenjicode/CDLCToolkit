@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "LuxProfileColorData.h"
 #include "ELuxCreationType.h"
-#include "UObject/NoExportTypes.h"
-#include "LuxProfilePersonalityData.h"
 #include "LuxProfileBodyData.h"
 #include "LuxProfileStyleData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
 #include "LuxProfilePartsData.h"
-#include "LuxProfileColorData.h"
+#include "LuxProfilePersonalityData.h"
 #include "LuxUITextureParam.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector4 -FallbackName=Vector4
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "LuxProfileData.generated.h"
 
 class ULuxCreationProfile;
@@ -58,7 +58,7 @@ public:
     int32 ID;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationProfile* baseProfileAsset;
+    TAssetPtr<ULuxCreationProfile> baseProfileAsset;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool modified;

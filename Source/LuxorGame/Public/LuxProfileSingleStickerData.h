@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LuxProfileDataSerializable.h"
-#include "LuxProfileSingleColorSlotData.h"
 #include "ELuxCreationStickerParamType.h"
 #include "ELuxStickerGuide.h"
+#include "LuxProfileDataSerializable.h"
+#include "LuxProfileSingleColorSlotData.h"
 #include "ELuxStickerMode.h"
 #include "LuxProfileSingleStickerData.generated.h"
 
@@ -14,7 +14,7 @@ struct FLuxProfileSingleStickerData : public FLuxProfileDataSerializable {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* sticker;
+    TAssetPtr<ULuxCreationTextureAsset> sticker;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FLuxProfileSingleColorSlotData> colors;

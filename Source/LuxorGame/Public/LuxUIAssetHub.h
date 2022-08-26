@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "LuxUIAssetLoaderHandle.h"
 #include "OnUIAssetLoadCompletedDelegate.h"
 #include "LuxUIAssetHub.generated.h"
 
-class ULuxUIAssetLoader;
 class ULuxUIAssetPaths;
+class ULuxUIAssetLoader;
 
 UCLASS(Blueprintable)
 class LUXORGAME_API ULuxUIAssetHub : public UObject {

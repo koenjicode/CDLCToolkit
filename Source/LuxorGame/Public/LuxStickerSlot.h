@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "LuxCreationSingleColor.h"
-#include "ELuxStickerGuide.h"
 #include "ELuxStickerMode.h"
+#include "ELuxStickerGuide.h"
 #include "LuxStickerSlot.generated.h"
 
 class ULuxCreationTextureAsset;
@@ -12,7 +12,7 @@ struct FLuxStickerSlot {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* sticker;
+    TAssetPtr<ULuxCreationTextureAsset> sticker;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
     TArray<FLuxCreationSingleColor> Color;

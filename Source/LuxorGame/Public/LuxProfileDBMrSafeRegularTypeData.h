@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELuxCreationModelType.h"
-#include "UIDataStructInterface.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
+#include "ELuxCreationModelType.h"
 #include "LuxProfileDBMrSafeRegularTypeData.generated.h"
 
 class ULuxCreationProfile;
@@ -18,7 +18,7 @@ public:
     ELuxCreationModelType Model;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationProfile* Profile;
+    TAssetPtr<ULuxCreationProfile> Profile;
     
     LUXORGAME_API FLuxProfileDBMrSafeRegularTypeData();
 };

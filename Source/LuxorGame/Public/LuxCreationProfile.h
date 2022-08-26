@@ -1,28 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LuxPartCategory.h"
 #include "LuxProfileBase.h"
-#include "LuxOffsetPartSetting.h"
-#include "LuxPersonalityCommentInfo.h"
-#include "LuxCreationSingleColor.h"
+#include "LuxPartCategory.h"
+#include "ELuxMuscleType.h"
+#include "LuxPartsSticker.h"
 #include "ELuxFightStyle.h"
 #include "ELuxRace.h"
-#include "ELuxMuscleType.h"
+#include "ELuxPartCategory.h"
 #include "LuxBodyScale.h"
 #include "LuxCreationSkinColor.h"
-#include "ELuxPartSlot.h"
+#include "LuxPersonalityCommentInfo.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
+#include "LuxCreationSingleColor.h"
 #include "LuxCreationPartsColor.h"
-#include "LuxPartsSticker.h"
+#include "LuxOffsetPartSetting.h"
+#include "LuxSlotMeshData.h"
 #include "LuxPermanentEffectSetting.h"
 #include "LuxTraceColorPalletSetting.h"
+#include "ELuxPartSlot.h"
 #include "ELuxProfilePersonalityCommentType.h"
-#include "LuxSlotMeshData.h"
-#include "ELuxPartCategory.h"
 #include "LuxCreationProfile.generated.h"
 
-class UTexture;
-class UMaterialInterface;
 class ULuxCreationTextureAsset;
+class UMaterialInterface;
+class UTexture;
 class ULuxStickerSubscene;
 
 UCLASS(Blueprintable)
@@ -45,7 +46,7 @@ public:
     ELuxMuscleType Muscle;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TAssetPtr <UMaterialInterface> SkinReplaceMaterial;
+    TAssetPtr<UMaterialInterface> SkinReplaceMaterial;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString UniqueTexturePath;
@@ -87,7 +88,7 @@ public:
     FLuxCreationSingleColor eyebrowColor;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TAssetPtr <ULuxCreationTextureAsset> EyebrowTexture;
+    TAssetPtr<ULuxCreationTextureAsset> EyebrowTexture;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLuxCreationSingleColor beardColor;

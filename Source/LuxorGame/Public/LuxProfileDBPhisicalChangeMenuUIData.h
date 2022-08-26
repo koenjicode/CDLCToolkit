@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
-#include "ELuxGender.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxProfileBodyPhysicalScaleFactorDataKey.h"
-#include "ELuxRace.h"
+#include "ELuxGender.h"
 #include "ELuxProfileDatabaseTableId.h"
+#include "ELuxRace.h"
 #include "LuxProfileDBPhisicalChangeMenuUIData.generated.h"
 
 class UTexture;
@@ -17,7 +17,7 @@ public:
     ELuxProfileBodyPhysicalScaleFactorDataKey Key;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;

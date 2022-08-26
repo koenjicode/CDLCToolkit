@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELuxCreationDecorMenuFactorDataKey.h"
-#include "UIDataStructInterface.h"
-#include "ELuxRace.h"
-#include "ELuxProfileDatabaseTableId.h"
 #include "ELuxFightStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
+#include "ELuxCreationDecorMenuFactorDataKey.h"
+#include "ELuxProfileDatabaseTableId.h"
+#include "ELuxRace.h"
 #include "LuxProfileDBDecorMenuUIData.generated.h"
 
 class UTexture;
@@ -17,7 +17,7 @@ public:
     ELuxCreationDecorMenuFactorDataKey Key;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* icon;
+    TAssetPtr<UTexture> icon;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;

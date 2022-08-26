@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
-#include "ELuxRace.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxGender.h"
+#include "ELuxRace.h"
 #include "LuxProfileDBTextureAssetPartsData.generated.h"
 
 class ULuxCreationTextureAsset;
@@ -16,13 +16,13 @@ public:
     int32 CategoryID;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* Asset;
+    TAssetPtr<ULuxCreationTextureAsset> Asset;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* thumbnail;
+    TAssetPtr<UTexture> thumbnail;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ELuxGender Gender;

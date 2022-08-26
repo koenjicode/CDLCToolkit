@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UIDataStructInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMGUtil -ObjectName=UIDataStructInterface -FallbackName=UIDataStructInterface
 #include "ELuxProfileVoiceEditFactorDataKey.h"
 #include "ELuxProfileDatabaseTableId.h"
 #include "LuxProfileDBVoiceEditMenuUIData.generated.h"
@@ -15,7 +15,7 @@ public:
     ELuxProfileVoiceEditFactorDataKey Key;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UTexture* icon;
+    TAssetPtr<UTexture> icon;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString locLabelTextId;

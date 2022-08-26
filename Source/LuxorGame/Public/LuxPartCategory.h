@@ -13,7 +13,7 @@ public:
     ELuxPartCategory Type;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationPartBase* part;
+    TAssetPtr<ULuxCreationPartBase> part;
     
     LUXORGAME_API FLuxPartCategory();
 };

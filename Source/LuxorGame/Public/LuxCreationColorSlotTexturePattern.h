@@ -10,7 +10,7 @@ struct FLuxCreationColorSlotTexturePattern {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    ULuxCreationTextureAsset* pattern;
+    TAssetPtr<ULuxCreationTextureAsset> pattern;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Size;
