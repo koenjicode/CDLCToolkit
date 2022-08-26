@@ -20,5 +20,8 @@ public:
     UMatineeTrackAtomSoundBase* AtomTrack;
     
     UMatineeTrackInstAtom();
+
+
+    
 };
 

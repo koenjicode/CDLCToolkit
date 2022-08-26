@@ -10,6 +10,16 @@ public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName TrackName;
+
+    // UMovieSceneTrack interface
+
+    virtual FMovieSceneEvalTemplatePtr CreateTemplateForSection(const UMovieSceneSection& InSection) const override;
+
+
+#if WITH_EDITORONLY_DATA
+    virtual FText GetDefaultDisplayName() const override;
+#endif
+
     
 public:
     UMovieSceneRetainerBoxTrack();

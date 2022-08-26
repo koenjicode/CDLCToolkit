@@ -17,6 +17,8 @@ public class LuxorGame : ModuleRules {
             "MediaAssets",
             "MovieScene",
             "MovieSceneTracks",
+            "Networking",
+            "Sockets",
             "ProceduralMeshComponent",
             "Slate",
             "SlateCore",

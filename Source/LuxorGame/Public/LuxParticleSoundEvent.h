@@ -18,5 +18,7 @@ public:
     bool UseLocation;
     
     ULuxParticleSoundEvent();
+    
+    
 };
 
