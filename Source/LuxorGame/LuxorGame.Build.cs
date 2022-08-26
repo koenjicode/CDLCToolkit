@@ -21,7 +21,6 @@ public class LuxorGame : ModuleRules {
             "Slate",
             "SlateCore",
             "UMG",
-            "UMGUtil",
         });
     }
 }

@@ -26,10 +26,6 @@
 		{
 			"Name": "OnlineSubsystem",
 			"Enabled": true
-		},
-		{
-			"Name": "OnlineCommSys",
-			"Enabled": true
 		}
 	]
 }
