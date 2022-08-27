@@ -10,6 +10,7 @@
 #include "LuxBodyScale.h"
 #include "LuxCreationSkinColor.h"
 #include "LuxPersonalityCommentInfo.h"
+#include "CoreUObject.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=StringAssetReference -FallbackName=StringAssetReference
 #include "LuxCreationSingleColor.h"
 #include "LuxCreationPartsColor.h"
@@ -19,12 +20,11 @@
 #include "LuxTraceColorPalletSetting.h"
 #include "ELuxPartSlot.h"
 #include "ELuxProfilePersonalityCommentType.h"
+#include "LuxStickerSubscene.h"
+#include "Materials/MaterialInterface.h"
 #include "LuxCreationProfile.generated.h"
 
-class ULuxCreationTextureAsset;
-class UMaterialInterface;
-class UTexture;
-class ULuxStickerSubscene;
+
 
 UCLASS(Blueprintable)
 class LUXORGAME_API ULuxCreationProfile : public ULuxProfileBase {

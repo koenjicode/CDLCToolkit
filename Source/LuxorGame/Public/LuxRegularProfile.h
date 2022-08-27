@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "LuxCreationProfile.h"
 #include "ELuxCharacter.h"
+#include "CoreUObject.h"
 #include "LuxBreastSwingParam.h"
 #include "LuxRegularProfile.generated.h"
 
