@@ -50,7 +50,7 @@ public:
     int32 WeaponVisibleDelayFrame;
     
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneComponent* EyeTargetComponent;
     
 public:

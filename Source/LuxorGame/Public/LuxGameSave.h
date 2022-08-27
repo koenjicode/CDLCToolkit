@@ -14,7 +14,7 @@ class LUXORGAME_API ULuxGameSave : public ULuxSaveGameBase {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSaveEvent, int32, EventType);
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TMap<FString, ULuxGameSaveObject*> GameSaveObjects;
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,7 +11,7 @@ UCLASS(Blueprintable)
 class UUIWidgetAnimation : public UObject {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UWidgetAnimation* WidgetAnimation;
     
     UUIWidgetAnimation();

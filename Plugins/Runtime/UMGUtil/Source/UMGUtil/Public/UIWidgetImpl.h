@@ -14,7 +14,7 @@ UCLASS(Abstract, Blueprintable)
 class UMGUTIL_API UUIWidgetImpl : public UUIObject {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBaseUserWidget* OwnerBaseUserWidget;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,7 +11,7 @@ class UMGUTIL_API UUIFadeManager : public UUIObject {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UBaseUserWidget* FadeWidget;
     
 public:

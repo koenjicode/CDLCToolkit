@@ -9,7 +9,7 @@ UCLASS(Blueprintable)
 class CRIWARERUNTIME_API AAtomSound : public AActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAtomComponent* AtomComponent;
     
     AAtomSound();
