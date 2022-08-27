@@ -54,7 +54,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     float GetScreenPercentage() const;
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static ULuxGameViewportClient* GetGameViewportClient(const UObject* WorldContextObject);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

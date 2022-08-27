@@ -25,7 +25,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void StopSE();
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static int32 PlayVoiceWorld(UObject* WorldContextObject, ELuxSystemVoiceID voice_id);
     
     UFUNCTION(BlueprintCallable)
@@ -34,13 +34,13 @@ public:
     UFUNCTION(BlueprintCallable)
     static int32 PlayStageNarrationVoice(const FString& stage_code);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static int32 PlaySEWorld(UObject* WorldContextObject, int32 cue_id, float StartTime);
     
     UFUNCTION(BlueprintCallable)
     static int32 PlaySE(int32 cue_id, float StartTime);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static int32 PlayNumberNarrationVoiceWorld(UObject* WorldContextObject, int32 Number);
     
     UFUNCTION(BlueprintCallable)

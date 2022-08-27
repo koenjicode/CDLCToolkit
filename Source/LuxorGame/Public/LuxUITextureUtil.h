@@ -65,7 +65,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static UTexture2D* CreateTexture2DFromCompressedImage(ELuxorCompressedImageFormat ImageFormat, const TArray<uint8>& ImageCompressedData);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"), Category = "Lux|Battle")
     static UTextureRenderTarget2D* CreateSizeAdjustedRenderTargetTexture2DWithBaseResolutionFullHD(UObject* WorldContext, int32 Width, int32 Height);
     
     UFUNCTION(BlueprintCallable)

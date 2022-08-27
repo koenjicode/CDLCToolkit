@@ -86,7 +86,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UUIDataStorage* DataStorage();
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContext"))
     static void CreateBaseUserWidget(UObject* WorldContext, UBaseUserWidget*& OutBaseUserWidget, TSubclassOf<UBaseUserWidget> BaseUserWidgetClass, int32 ZOrder, bool bActivate, int32 filterPlayerControllerId);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

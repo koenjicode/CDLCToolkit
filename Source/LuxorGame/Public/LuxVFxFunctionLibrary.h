@@ -24,16 +24,16 @@ public:
     UFUNCTION(BlueprintCallable)
     static ULuxParticleSystemComponent* SpawnLuxEmitterAttached(UParticleSystem* Template, USceneComponent* AttachToComponent, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale3D, TEnumAsByte<EAttachLocation::Type> LocationType, bool bAutoDestroy);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static ULuxParticleSystemComponent* SpawnLuxEmitterAtLocation(UObject* WorldContextObject, UParticleSystem* Template, FVector Location, FRotator Rotation, FVector Scale3D, bool bAutoDestroy);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static ULuxGroundDebrisComponent* SpawnGroundDebris(UObject* WorldContextObject, const FLuxGroundDebrisSetting& Setting, const FTransform& Transform, bool bAutoDestroy);
     
     UFUNCTION(BlueprintCallable)
     static void RemovePostProcessMaterial(APostProcessVolume* PostProcessVolume, int32 index);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure, meta = (WorldContext = "WorldContextObject"), Category = "Lux|Battle")
     static APostProcessVolume* GetPostProcessVolume(UObject* WorldContextObject);
     
     UFUNCTION(BlueprintCallable)
