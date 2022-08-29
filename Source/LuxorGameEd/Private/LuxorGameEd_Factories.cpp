@@ -21,7 +21,6 @@ ULuxProfileBase_Factory::ULuxProfileBase_Factory(const FObjectInitializer& Objec
 
 UObject* ULuxProfileBase_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-		check(Class->IsChildOf(ULuxProfileBase::StaticClass()));
 		return NewObject<ULuxProfileBase>(InParent, Class, Name, Flags, Context);
 }
 
@@ -37,7 +36,6 @@ ULuxCreationTextureAsset_Factory::ULuxCreationTextureAsset_Factory(const FObject
 
 UObject* ULuxCreationTextureAsset_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	check(Class->IsChildOf(ULuxCreationTextureAsset::StaticClass()));
 	return NewObject<ULuxCreationTextureAsset>(InParent, Class, Name, Flags, Context);
 }
 
@@ -52,7 +50,6 @@ ULuxAssetPathsBase_Factory::ULuxAssetPathsBase_Factory(const FObjectInitializer&
 
 UObject* ULuxAssetPathsBase_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	check(Class->IsChildOf(ULuxAssetPathsBase::StaticClass()));
 	return NewObject<ULuxProfileBase>(InParent, Class, Name, Flags, Context);
 }
 
@@ -68,7 +65,6 @@ ULuxCreationPartBase_Factory::ULuxCreationPartBase_Factory(const FObjectInitiali
 
 UObject* ULuxCreationPartBase_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	check(Class->IsChildOf(ULuxCreationPartBase::StaticClass()));
 	return NewObject<ULuxCreationPartBase>(InParent, Class, Name, Flags, Context);
 }
 
@@ -83,7 +79,6 @@ ULuxLoadableBase_Factory::ULuxLoadableBase_Factory(const FObjectInitializer& Obj
 
 UObject* ULuxLoadableBase_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	check(Class->IsChildOf(ULuxLoadableBase::StaticClass()));
 	return NewObject<ULuxLoadableBase>(InParent, Class, Name, Flags, Context);
 }
 
