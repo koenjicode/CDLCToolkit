@@ -30,7 +30,7 @@ ULuxCreationTextureAsset_Factory::ULuxCreationTextureAsset_Factory(const FObject
 {
 	bCreateNew = true;
 	bEditAfterNew = true;
-	SupportedClass = ULuxProfileBase::StaticClass();
+	SupportedClass = ULuxCreationTextureAsset::StaticClass();
 }
 
 
