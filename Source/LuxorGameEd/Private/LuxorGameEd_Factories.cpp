@@ -50,7 +50,7 @@ ULuxAssetPathsBase_Factory::ULuxAssetPathsBase_Factory(const FObjectInitializer&
 
 UObject* ULuxAssetPathsBase_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	return NewObject<ULuxProfileBase>(InParent, Class, Name, Flags, Context);
+	return NewObject<ULuxAssetPathsBase>(InParent, Class, Name, Flags, Context);
 }
 
 
