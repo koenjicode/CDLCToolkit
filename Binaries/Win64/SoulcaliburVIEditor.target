@@ -1096,6 +1096,18 @@
 			"Type" : "ImportLibrary"
 		},
 		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-LuxorGameEd.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-LuxorGameEd.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-LuxorGameEd.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
 			"Path" : "$(EngineDir)/Binaries/Win64/UE4Editor-Json.dll",
 			"Type" : "DynamicLibrary",
 			"IsPrecompiled" : true

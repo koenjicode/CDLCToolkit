@@ -8,6 +8,7 @@ public class SoulcaliburVIEditorTarget : TargetRules {
 			"ClothingSystemRuntime",
 			"GeometryCache",
 			"LuxorGame",
+			"LuxorGameEd",
 		});
 	}
 }

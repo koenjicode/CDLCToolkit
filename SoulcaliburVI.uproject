@@ -13,6 +13,11 @@
 			"Name": "ProceduralMeshComponent",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "LuxorGameEd",
+			"Type": "Editor",
+			"LoadingPhase": "PreDefault"
 		}
 	],
 	"Plugins": [
