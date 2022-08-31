@@ -13,14 +13,22 @@ void FLuxorGameEdModule::StartupModule()
 	IAssetTools &AssetTools = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools").Get();
 	Luxor = AssetTools.RegisterAdvancedAssetCategory(FName(TEXT("Luxor")),LOCTEXT("Luxor","Luxor"));
 	{
-		TSharedRef<IAssetTypeActions> ACT_ULuxProfileBaseFactoryActions = MakeShareable(new FATA_ULuxProfileBaseFactoryActions);
-		AssetTools.RegisterAssetTypeActions(ACT_ULuxProfileBaseFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxCreationProfileFactoryActions = MakeShareable(new FATA_ULuxCreationProfileFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxCreationProfileFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxRegularProfileFactoryActions = MakeShareable(new FATA_ULuxRegularProfileFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxRegularProfileFactoryActions);
 		TSharedRef<IAssetTypeActions> ACT_ULuxCreationTextureAssetFactoryActions = MakeShareable(new FATA_ULuxCreationTextureAssetFactoryActions);
 		AssetTools.RegisterAssetTypeActions(ACT_ULuxCreationTextureAssetFactoryActions);
-		TSharedRef<IAssetTypeActions> ACT_ULuxAssetPathsBaseFactoryActions = MakeShareable(new FATA_ULuxAssetPathsBaseFactoryActions);
-		AssetTools.RegisterAssetTypeActions(ACT_ULuxAssetPathsBaseFactoryActions);
-		TSharedRef<IAssetTypeActions> ACT_ULuxCreationPartBaseFactoryActions = MakeShareable(new FATA_ULuxCreationPartBaseFactoryActions);
-		AssetTools.RegisterAssetTypeActions(ACT_ULuxCreationPartBaseFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxCharacterAssetPathsFactoryActions = MakeShareable(new FATA_ULuxCharacterAssetPathsFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxCharacterAssetPathsFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxStageAssetPathsFactoryActions = MakeShareable(new FATA_ULuxStageAssetPathsFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxStageAssetPathsFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxVoiceAssetPathsFactoryActions = MakeShareable(new FATA_ULuxVoiceAssetPathsFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxVoiceAssetPathsFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxWeaponAssetPathsFactoryActions = MakeShareable(new FATA_ULuxWeaponAssetPathsFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxWeaponAssetPathsFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxCreationImportedPartFactoryActions = MakeShareable(new FATA_ULuxCreationImportedPartFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxCreationImportedPartFactoryActions);
 		TSharedRef<IAssetTypeActions> ACT_ULuxLoadableBaseFactoryActions = MakeShareable(new FATA_ULuxLoadableBaseFactoryActions);
 		AssetTools.RegisterAssetTypeActions(ACT_ULuxLoadableBaseFactoryActions);
 	}

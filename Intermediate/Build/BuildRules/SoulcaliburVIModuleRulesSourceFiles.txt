@@ -1,10 +1,10 @@
-S:\Github Projects\CDLCToolkit\Source\LuxorGame\LuxorGame.Build.cs
-S:\Github Projects\CDLCToolkit\Source\LuxorGameEd\LuxorGameEd.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMDInputCore\DMDInputCore.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMUtility\DMUtility.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\EnginePlugins\Runtime\CriWare\Source\CriWareRuntime\CriWareRuntime.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\Online\LuxorSessionTool\Source\LuxorSessionUtil\LuxorSessionUtil.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\Runtime\CeBankPlugin\Source\CeBankPlugin\CeBankPlugin.Build.cs
-S:\Github Projects\CDLCToolkit\Plugins\Runtime\UMGUtil\Source\UMGUtil\UMGUtil.Build.cs
-S:\Github Projects\CDLCToolkit\Source\SoulcaliburVI.Target.cs
-S:\Github Projects\CDLCToolkit\Source\SoulcaliburVIEditor.Target.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Source\LuxorGame\LuxorGame.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Source\LuxorGameEd\LuxorGameEd.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMDInputCore\DMDInputCore.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\Dimps\Runtime\DMUtility\Source\DMUtility\DMUtility.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\EnginePlugins\Runtime\CriWare\Source\CriWareRuntime\CriWareRuntime.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\Online\LuxorSessionTool\Source\LuxorSessionUtil\LuxorSessionUtil.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\Runtime\CeBankPlugin\Source\CeBankPlugin\CeBankPlugin.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Plugins\Runtime\UMGUtil\Source\UMGUtil\UMGUtil.Build.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Source\SoulcaliburVI.Target.cs
+C:\Users\LogzatioStudios\Documents\GitHub\CDLCToolkit\Source\SoulcaliburVIEditor.Target.cs
