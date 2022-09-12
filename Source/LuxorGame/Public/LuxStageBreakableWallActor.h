@@ -15,22 +15,22 @@ UCLASS(Blueprintable)
 class LUXORGAME_API ALuxStageBreakableWallActor : public ALuxStageActorBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* BaseMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULuxStageMeshComponent* BaseTranslucentMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* BrokenMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULuxStageMeshComponent* BrokenTranslucentMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULuxSkeletalMeshComponent* BreakingMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     ULuxStageSkeletalMeshComponent* BreakingTranslucentMeshComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

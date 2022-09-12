@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "LuxStageActorBase.h"
-/*#include "ProceduralMeshComponent.h"*/
+#include "ProceduralMeshComponent.h"
 #include "Engine/EngineTypes.h"
 #include "LuxStageCuttableMeshBase.generated.h"
 
@@ -19,13 +19,13 @@ UCLASS(Blueprintable)
 class LUXORGAME_API ALuxStageCuttableMeshBase : public ALuxStageActorBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* MeshComponent;
     
-    /*UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    UProceduralMeshComponent* ProceduralMeshComponent;*/
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UProceduralMeshComponent* ProceduralMeshComponent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAtomComponent* SliceSEComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
