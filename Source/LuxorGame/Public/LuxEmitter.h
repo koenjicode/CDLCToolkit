@@ -9,7 +9,7 @@ UCLASS(Blueprintable)
 class LUXORGAME_API ALuxEmitter : public ALuxStageActorBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
     ULuxParticleSystemComponent* LuxParticleSystemComponent;
     
     ALuxEmitter();

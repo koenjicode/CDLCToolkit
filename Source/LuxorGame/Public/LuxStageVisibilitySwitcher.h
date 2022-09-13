@@ -12,7 +12,7 @@ UCLASS(Blueprintable)
 class LUXORGAME_API ALuxStageVisibilitySwitcher : public ALuxActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, meta=(AllowPrivateAccess=true))
     UArrowComponent* ArrowComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
