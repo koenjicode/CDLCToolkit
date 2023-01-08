@@ -1,6 +1,6 @@
 #include "LuxVariationRequest.h"
 
 FLuxVariationRequest::FLuxVariationRequest() {
-    this->Variation = ELuxPartVariation::EPV_A;
+    this->Variation = ELuxPartVariation::EPV_DEFAULT;
 }
 

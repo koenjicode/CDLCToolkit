@@ -4,7 +4,7 @@
 	"BuildId" : "7d5229ac-d3e2-4191-ac6f-9a43d8706aee",
 	"Modules" : 
 	{
-		"LuxorGame" : "UE4Editor-LuxorGame.dll",
-		"LuxorGameEd" : "UE4Editor-LuxorGameEd.dll"
+		"LuxorGame" : "UE4Editor-LuxorGame-1194.dll",
+		"LuxorGameEd" : "UE4Editor-LuxorGameEd-1194.dll"
 	}
 }
