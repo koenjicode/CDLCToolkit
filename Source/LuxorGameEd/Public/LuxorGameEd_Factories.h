@@ -18,6 +18,7 @@
 #include "LuxorGameEd.h"
 #include "LuxCreationProfile.h"
 #include "LuxRegularProfile.h"
+#include "LuxBattleMovePlayData.h"
 #include "LuxorGameEd_Factories.generated.h"
 
 #define LOCTEXT_NAMESPACE "FLuxorGameEdModule"
@@ -265,6 +266,31 @@ public:
 	virtual UClass* GetSupportedClass() const override { return ULuxLoadableBase::StaticClass(); }
 };
 
+UCLASS()
+class LUXORGAMEED_API ULuxBattleMovePlayData_Factory : public UFactory
+{
+	GENERATED_UCLASS_BODY()
+
+		ULuxBattleMovePlayData_Factory();
+
+protected:
+	virtual bool IsMacroFactory() const { return false; }
+
+public:
+	// UFactory interface
+	virtual UObject* FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn) override;
+	// End of UFactory interface
+};
+
+
+class FATA_ULuxBattleMovePlayDataFactoryActions : public FAssetTypeActions_Base {
+public:
+	virtual FText GetName() const override { return LOCTEXT("LuxBattleMovePlayData", "Lux Battle Move Play Data"); }
+	virtual uint32 GetCategories() override { return Luxor; }
+	virtual FColor GetTypeColor() const override { return FColor(66, 135, 245); }
+	virtual FText GetAssetDescription(const FAssetData &AssetData) const override { return LOCTEXT("LuxorDescription", "Move Play Data"); }
+	virtual UClass* GetSupportedClass() const override { return ULuxBattleMovePlayData::StaticClass(); }
+};
 
 
 #undef LOCTEXT_NAMESPACE

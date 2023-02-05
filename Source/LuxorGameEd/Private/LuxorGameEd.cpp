@@ -31,6 +31,8 @@ void FLuxorGameEdModule::StartupModule()
 		AssetTools.RegisterAssetTypeActions(ACT_ULuxCreationImportedPartFactoryActions);
 		TSharedRef<IAssetTypeActions> ACT_ULuxLoadableBaseFactoryActions = MakeShareable(new FATA_ULuxLoadableBaseFactoryActions);
 		AssetTools.RegisterAssetTypeActions(ACT_ULuxLoadableBaseFactoryActions);
+		TSharedRef<IAssetTypeActions> ACT_ULuxBattleMovePlayDataFactoryActions = MakeShareable(new FATA_ULuxBattleMovePlayDataFactoryActions);
+		AssetTools.RegisterAssetTypeActions(ACT_ULuxBattleMovePlayDataFactoryActions);
 	}
 
 	

@@ -141,5 +141,19 @@ UObject* ULuxLoadableBase_Factory::FactoryCreateNew(UClass* Class, UObject* InPa
 	return NewObject<ULuxLoadableBase>(InParent, Class, Name, Flags, Context);
 }
 
+ULuxBattleMovePlayData_Factory::ULuxBattleMovePlayData_Factory(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+	bCreateNew = true;
+	bEditAfterNew = true;
+	SupportedClass = ULuxBattleMovePlayData::StaticClass();
+}
+
+
+UObject* ULuxBattleMovePlayData_Factory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
+{
+	return NewObject<ULuxBattleMovePlayData>(InParent, Class, Name, Flags, Context);
+}
+
 
 #undef LOCTEXT_NAMESPACE
