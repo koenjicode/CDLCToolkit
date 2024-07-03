@@ -10,5 +10,6 @@ ULuxCreationTextureAsset::ULuxCreationTextureAsset() {
     this->SizeMin = 1.00f;
     this->AspectRate = 1.00f;
     this->UIDefaultSize = 0;
+	this->Identifier = this->GetFName();
 }
 
