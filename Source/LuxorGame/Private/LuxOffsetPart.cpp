@@ -21,11 +21,5 @@ FLuxOffsetPart::FLuxOffsetPart() {
 	this->CandidateParents[14].Bone = ELuxOffsetParentBone::EPB_KNEE_L;
 	this->CandidateParents[15].Bone = ELuxOffsetParentBone::EPB_FOOT_R;
 	this->CandidateParents[16].Bone = ELuxOffsetParentBone::EPB_FOOT_L;
-
-	for (int i = 0; i < 17; i++)
-	{
-		this->CandidateParents[i].DefaultRotation = FVector(0, 0, 0);
-		this->CandidateParents[i].DefaultTranslation = FVector(0, 0, 0);
-	}
 }
 
