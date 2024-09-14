@@ -13,7 +13,7 @@ public:
     int32 ID;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UParticleSystem* Template;
+    TAssetPtr<UParticleSystem> Template;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLuxPSSetting Setting;
