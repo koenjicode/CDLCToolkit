@@ -10,10 +10,10 @@ UCLASS(Blueprintable)
 class LUXORGAME_API ULuxRegularProfile : public ULuxCreationProfile {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true), Category = "Character")
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ELuxCharacter Character;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true), Category = "Body")
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
     TArray<FLuxBreastSwingParam> SwingParams;
     
     ULuxRegularProfile();

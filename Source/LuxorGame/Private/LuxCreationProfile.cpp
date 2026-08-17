@@ -22,7 +22,6 @@ ULuxCreationProfile::ULuxCreationProfile() {
     this->PartsBreakableUpper = true;
     this->PartsBreakableMiddle = true;
     this->PartsBreakableLower = true;
-	
 
 	//Body Scales
 	this->BodyScales[1].Type = ELuxBodyScale::EBS_UPPER;
@@ -91,7 +90,6 @@ ULuxCreationProfile::ULuxCreationProfile() {
 	this->partsColor[22].Type = ELuxPartCategory::EEC_RacialParts2;
 	this->partsColor[23].Type = ELuxPartCategory::EEC_RacialParts3;
 	this->partsColor[24].Type = ELuxPartCategory::EEC_RacialParts4;
-	
 
 	//Extra Part Settings
 	this->ExtraPartsSettings[0].Type = ELuxPartCategory::EEC_Extra1;
